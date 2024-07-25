@@ -1,8 +1,9 @@
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="text-red-500 text-4xl">
-      Hello world
+    <div className="h-screen scrollbar-hide overflow-y-auto">
+      <Home />
     </div>
   );
 }
