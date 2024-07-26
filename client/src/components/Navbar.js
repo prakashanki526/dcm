@@ -46,8 +46,8 @@ export default function Navbar() {
                 </div>
             </div>
             <nav className="px-3 md:px-24 lg:px-48 py-4 shadow-lg">
-                <div className="container mx-auto flex justify-between items-center">
-                    <div className="text-lg font-bold">Brand</div>
+                <div className="container mx-auto flex justify-between items-center text-lg">
+                    <div className="text-lg font-bold">SECURITY</div>
                     <div className="hidden md:flex space-x-8">
                         <a href="#" className="hover:text-[#1ba6f7]">Home</a>
                         <a href="#" className="hover:text-[#1ba6f7]">About</a>

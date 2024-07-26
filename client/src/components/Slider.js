@@ -1,18 +1,29 @@
 import React from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import img1 from '../assets/images/intro.jpeg'
 
 export default function Slider() {
     return (
-        <Carousel>
-            <div className='h-72 md:h-[28rem] w-full bg-slate-300'>
-                <p className="">Legend 1</p>
+        <Carousel infiniteLoop={true} autoPlay={true}>
+            <div className='md:h-[34rem] w-full bg-slate-300'>
+                <img src={img1} alt='' />
             </div>
-            <div className='h-72 md:h-[28rem] w-full bg-slate-300'>
-                <p className="">Legend 2</p>
+            <div className='md:h-[34rem] w-full bg-slate-300'>
+                <img src={img1} alt='' />
+
             </div>
-            <div className='h-72 md:h-[28rem] w-full bg-slate-300'>
-                <p className="">Legend 3</p>
+            <div className='md:h-[34rem] w-full bg-slate-300'>
+                <img src={img1} alt='' />
+
+            </div>
+            <div className='md:h-[34rem] w-full bg-slate-300'>
+                <img src={img1} alt='' />
+
+            </div>
+            <div className='md:h-[34rem] w-full bg-slate-300'>
+                <img src={img1} alt='' />
+
             </div>
         </Carousel>
     )
