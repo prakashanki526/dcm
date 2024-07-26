@@ -10,15 +10,15 @@ import Footer from '../components/Footer';
 
 export default function Home() {
     return (
-        <div className='z-0 tracking-wide md:tracking-widest'>
-            <Navbar />
+        <div className='z-0 tracking-wide md:tracking-wider'>
+            <Navbar page="home" />
             <div className='mt-[5.8rem]'>
                 {/* <Slider /> */}
                 <div className='h-80 md:h-[38rem] w-full bg-hero bg-cover bg-center'>
                     <div className='h-full w-full bg-black opacity-60 flex items-center justify-center flex-col'>
                         <div className='flex flex-col justify-center items-center tracking-widest'>
                             <motion.div animate={{ y: 0, opacity: 1 }} transition={{ type: "spring", bounce: 0, duration: 2, delay: 1 }} initial={{ y: -100, opacity: 0 }} className=' text-white font-bold transition-all leading-tight relative text-[3rem] md:text-[4rem]'>
-                                CRM
+                                DCM
                             </motion.div>
                             <motion.div animate={{ y: 0, opacity: 1 }} transition={{ type: "spring", bounce: 0, duration: 2, delay: 3 }} initial={{ y: 100, opacity: 0 }} className='relative text-white transition-all md:text-[2rem]'>Always for your needs
 

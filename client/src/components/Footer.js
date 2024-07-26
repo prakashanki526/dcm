@@ -8,7 +8,7 @@ import FacebookIcon from './icons/FacebookIcon'
 
 export default function Footer() {
   return (
-    <div className='flex flex-col justify-center items-center w-full py-4 px-3 md:px-24 lg:px-48 bg-white'>
+    <div className='flex flex-col justify-center items-center w-full py-4 px-3 md:px-24 lg:px-48 bg-white mt-6'>
 
 
                 <div className='w-full mb-8 border-b-2 hidden lg:block'></div>
@@ -23,25 +23,25 @@ export default function Footer() {
                             <div className='flex space-x-1 md:space-x-3 socail-m'>
 
                                 <Fade direction='up' delay={1} triggerOnce>
-                                    <a href='https://www.facebook.com/FinessseInteractiveSolution' target='_blank' className='flex'>
+                                    <a href='https://www.facebook.com/' target='_blank' className='flex'>
                                         <div className='h-8 w-9 cursor-pointer'>
                                             <FacebookIcon height="30px" fill="#606060" />
                                         </div>
                                         {/* Like Us */}
                                     </a>
-                                    <a href='https://twitter.com/finessseim' target='_blank' className='flex'>
+                                    <a href='https://twitter.com/' target='_blank' className='flex'>
                                         <div className='h-8 w-9 cursor-pointer'>
                                             <TwitterIcon height="30px" fill="#606060" />
                                         </div>
                                         {/* Follow Us */}
                                     </a>
-                                    <a href='https://www.linkedin.com/company/1568398/' target='_blank' className='flex'>
+                                    <a href='https://www.linkedin.com/' target='_blank' className='flex'>
                                         <div className='h-8 w-9 cursor-pointer'>
                                             <LinkedinIcon height="30px" fill="#606060" />
                                         </div>
                                         {/* Join Us */}
                                     </a>
-                                    <a href='https://www.instagram.com/finessseinteractive/' target='_blank' className='flex'>
+                                    <a href='https://www.instagram.com/' target='_blank' className='flex'>
                                         <div className='h-8 w-9 cursor-pointer'>
                                             <InstaIcon height="30px" fill="#606060" />
                                         </div>
@@ -49,20 +49,22 @@ export default function Footer() {
                                     </a>
                                 </Fade>
                             </div>
+                            <Fade direction='up' delay={1} triggerOnce>
                             <div className='text-[#1ba6f7] text-md font-bold px-4 hidden lg:block'>DCM Vigilance & Maintenance Services Pvt. Ltd.</div>
+                            </Fade>
                         </div>
                     </div>
 
                     <div className='flex flex-1 flex-col items-center lg:items-end w-full gap-3'>
                         <Fade direction='up' triggerOnce>
-                            <div className='text-[#1ba6f7] text-sm font-bold md:hidden'>Finessse Interactive Solutions Pvt. Ltd.</div>
+                            <div className='text-[#1ba6f7] text-sm font-bold md:hidden'>DCM Vigilance & Maintenance Services Pvt. Ltd.</div>
 
                             <div className='text-center md:text-right'>
-                                <span className='text-[#1ba6f7] text-sm'>Send Mail: </span><a href="mailto:deepak@finessse.digital">deepak@finessse.digital</a> | <a href="mailto:info@finessse.digital">info@finessse.digital</a>
+                                <span className='text-[#1ba6f7] text-sm'>Send Mail: </span><a href="mailto:email@ssse.digital">email@ssse.digital</a> | <a href="mailto:info@esse.digital">info@dcm.digital</a>
                             </div>
 
                             <div className=''>
-                                <span className='text-[#1ba6f7] text-sm'>Call Us: </span><a href='tel:+91 9810619956'>+91- 9810619956</a>
+                                <span className='text-[#1ba6f7] text-sm'>Call Us: </span><a href='tel:+91-(033) 4603 1489'>+91-(033) 4603 1489</a>
                             </div>
 
                             <div className='text-sm my-4 text-gray-500 text-center'>

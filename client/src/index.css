@@ -13,9 +13,15 @@ body {
   padding: 0;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+@font-face {
+  font-family: 'misolight';
+  src: local('misolight'),
+       url('../src/assets/fonts/miso-light-webfont.woff2') format('woff2')
 }
 
 .carousel .thumbs-wrapper {
@@ -25,6 +31,10 @@ code {
 
 .carousel .thumbs {
   justify-content: center;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 

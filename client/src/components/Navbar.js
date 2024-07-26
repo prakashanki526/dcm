@@ -6,11 +6,14 @@ import FacebookIcon from './icons/FacebookIcon'
 import TwitterIcon from './icons/TwitterIcon'
 import LinkedinIcon from './icons/LinkedinIcon'
 import InstaIcon from './icons/InstaIcon'
+import { useNavigate } from 'react-router-dom'
 
 
 
-export default function Navbar() {
+export default function Navbar(props) {
     const [isOpen, setIsOpen] = useState(false);
+    const navigate = useNavigate();
+
     return (
         <div className='fixed top-0 w-full z-10 bg-white'>
             <div className='px-3 md:px-24 lg:px-48 flex items-center justify-between py-1'>
@@ -36,11 +39,11 @@ export default function Navbar() {
                     <div className='flex space-x-1 text-black items-center'>
                         <img src={whatsappIcon} alt="whatsapp"></img>
                         <img src={phoneIcon} alt="phone"></img>
-                        <a href='tel:+91 9810619956' target='_blank' className='hover:text-[#1ba6f7]'>+91- 9810619956</a>
+                        <a href='tel:+91-(033) 4603 1489' target='_blank' className='hover:text-[#1ba6f7]'>+91-(033)46031489</a>
                     </div>
                     <div className='flex space-x-1 text-black items-center'>
                         <img src={mailIcon} alt="email"></img>
-                        <a href='mailto:info@finessse.digital' target='_blank' className='hover:text-[#1ba6f7]'>info@finessse.digital</a>
+                        <a href='mailto:email@dcm.com' target='_blank' className='hover:text-[#1ba6f7]'>email@dcm.com</a>
                     </div>
 
                 </div>
@@ -49,10 +52,11 @@ export default function Navbar() {
                 <div className="container mx-auto flex justify-between items-center text-lg">
                     <div className="text-lg font-bold">SECURITY</div>
                     <div className="hidden md:flex space-x-8">
-                        <a href="#" className="hover:text-[#1ba6f7]">Home</a>
-                        <a href="#" className="hover:text-[#1ba6f7]">About</a>
-                        <a href="#" className="hover:text-[#1ba6f7]">Services</a>
-                        <a href="#" className="hover:text-[#1ba6f7]">Contact</a>
+                        <a onClick={()=>navigate('/')} className={`hover:text-[#1ba6f7] cursor-pointer ${props.page === "home" && 'text-[#1ba6f7]'}`}>Home</a>
+                        <a onClick={()=>navigate('/')} className={`hover:text-[#1ba6f7] cursor-pointer ${props.page === "hme" && 'text-[#1ba6f7]'}`}>About</a>
+                        <a onClick={()=>navigate('/')} className={`hover:text-[#1ba6f7] cursor-pointer ${props.page === "hom" && 'text-[#1ba6f7]'}`}>Services</a>
+                        <a onClick={()=>navigate('/contact-us')} className={`hover:text-[#1ba6f7] cursor-pointer ${props.page === "contact" && 'text-[#1ba6f7]'}`}>Contact Us</a>
+                        <a onClick={()=>navigate('/our-team')} className={`hover:text-[#1ba6f7] cursor-pointer ${props.page === "our-team" && 'text-[#1ba6f7]'}`}>Our Team</a>
                     </div>
                     <div className="px-3 md:hidden">
                         <button
@@ -68,10 +72,11 @@ export default function Navbar() {
                 <div
                     className={`md:hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-screen' : 'max-h-0 overflow-hidden'}`}
                 >
-                    <a href="#" className="block px-4 py-2 hover:text-[#1ba6f7]">Home</a>
-                    <a href="#" className="block px-4 py-2 hover:text-[#1ba6f7]">About</a>
-                    <a href="#" className="block px-4 py-2 hover:text-[#1ba6f7]">Services</a>
-                    <a href="#" className="block px-4 py-2 hover:text-[#1ba6f7]">Contact</a>
+                    <a onClick={()=>navigate('/')} className="block px-4 py-2 hover:text-[#1ba6f7]">Home</a>
+                    <a onClick={()=>navigate('/')} className="block px-4 py-2 hover:text-[#1ba6f7]">About</a>
+                    <a onClick={()=>navigate('/')} className="block px-4 py-2 hover:text-[#1ba6f7]">Services</a>
+                    <a onClick={()=>navigate('/contact-us')} className="block px-4 py-2 hover:text-[#1ba6f7]">Contact Us</a>
+                    <a onClick={()=>navigate('/our-team')} className="block px-4 py-2 hover:text-[#1ba6f7]">Contact Us</a>
                 </div>
             </nav>
         </div>
