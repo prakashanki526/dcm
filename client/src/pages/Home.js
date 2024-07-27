@@ -38,7 +38,7 @@ export default function Home() {
             <Fade direction="up" triggerOnce>
                 <div className='flex flex-col-reverse md:flex-row gap-4 md:gap-8'>
                     <div className='w-full md:w-[50%]'>
-                        <img src={intoImg} alt='Intro image' />
+                        <img src={intoImg} alt='Intro image' className='rounded-md' />
                     </div>
                     <div className='w-full md:w-[50%] text-lg text-justify'>
                         <p>Established in 2001  as partnership firm and switched over to Pvt. Ltd. Co. on 31.03.2009 . DCM Vigilance & Maintenance Services Pvt. Ltd is an ISO 9001:2008 certified company for providing Security and Facility services.</p>
