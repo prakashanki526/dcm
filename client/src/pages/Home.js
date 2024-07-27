@@ -6,6 +6,8 @@ import ArrowRight from '../components/icons/ArrowRight';
 import { Slide, Fade } from "react-awesome-reveal";
 import intoImg from '../assets/images/intro.jpeg'
 import Footer from '../components/Footer';
+import Service from '../components/Service';
+import Location from '../components/Location';
 
 
 export default function Home() {
@@ -24,9 +26,9 @@ export default function Home() {
 
                             </motion.div>
                         </div>
-                        <motion.div animate={{ y: 0 }} transition={{ type: "spring", bounce: 0.2, delay: 5 }} initial={{ y: 500 }} className='hidden lg:flex justify-cente items-center border border-white hover:border-[#1ba6f7] text-white pl-6 py-2 cursor-pointer hover:bg-[#1ba6f7] mt-8 w-44 group'>
+                        <motion.div animate={{ y: 0 }} transition={{ type: "spring", bounce: 0.2, delay: 5 }} initial={{ y: 500 }} className='hidden lg:flex justify-cente items-center border border-white hover:border-orange-600 text-white pl-6 py-2 cursor-pointer hover:bg-orange-600 mt-8 w-44 group z-50'>
                             <div className='flex justify-center items-center'>Get In Touch</div>
-                            <div className='flex justify-center items-center ml-2 transition-all group-hover:ml-4'><ArrowRight width="22px" fill="white" /></div>
+                            <div className='flex justify-center items-center ml-2 transition-all duration-400 group-hover:ml-4'><ArrowRight width="22px" fill="white" /></div>
                         </motion.div>
                     </div>
 
@@ -52,6 +54,9 @@ export default function Home() {
                     <Slider />
                 </div>
             </div>
+            <Service />
+
+            <Location />
 
             <Footer />
         </div>

@@ -9,6 +9,7 @@ import kabirImg from '../assets/images/team/kabir.jpg'
 import santanuImg from '../assets/images/team/santanu.jpg'
 import asisImg from '../assets/images/team/asis.jpg'
 import { Fade } from 'react-awesome-reveal'
+import Heading from '../components/Heading'
 
 export default function OurTeam() {
     return (
@@ -18,7 +19,8 @@ export default function OurTeam() {
             <div className='section px-3 md:px-24 lg:px-48 py-4 md:py-8 lg:py-10 mt-[5.8rem]'>
                 <Fade direction="up" triggerOnce>
 
-                    <h1 className='text-2xl md:text-4xl text-center md:mb-4 mt-4'>MEET OUR TEAM</h1>
+                    {/* <h1 className='text-2xl md:text-4xl text-center md:mb-4 mt-4'>MEET OUR TEAM</h1> */}
+                    <Heading text="MEET OUR TEAM" />
                     <h2 className='text-xl md:text-2xl text-center mb-4 md:mb-8 italic'>"Alone we can do so little; together we can do so much."</h2>
                 </Fade>
 
