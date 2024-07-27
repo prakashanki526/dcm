@@ -34,7 +34,7 @@ export default function Home() {
 
                 </div>
             </div>
-            <div className='section px-3 md:px-24 lg:px-48 py-4 md:py-8 lg:py-10'>
+            <div className='section px-3 md:px-24 lg:px-48 py-4 md:py-8 lg:py-10 bg-orange-600 text-white'>
             <Fade direction="up" triggerOnce>
                 <div className='flex flex-col-reverse md:flex-row gap-4 md:gap-8'>
                     <div className='w-full md:w-[50%]'>
