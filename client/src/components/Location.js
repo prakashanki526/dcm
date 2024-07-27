@@ -46,7 +46,7 @@ export default function Location() {
                     </div>
                 </div>
                 <div className='w-full md:w-[50%] aspect-square'>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.510998763963!2d88.43596267507964!3d22.634728779447503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89e3572bc3115%3A0xa0b904b1425499b0!2sDCM%20Vigilance%20%26%20Maintenance%20Services%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1722006574210!5m2!1sen!2sin" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='h-full w-full'></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.510998763963!2d88.43596267507964!3d22.634728779447503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89e3572bc3115%3A0xa0b904b1425499b0!2sDCM%20Vigilance%20%26%20Maintenance%20Services%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1722006574210!5m2!1sen!2sin" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='h-full w-full' title='map'></iframe>
                 </div>
 
             </div>

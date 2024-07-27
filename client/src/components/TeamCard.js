@@ -1,5 +1,4 @@
 import React from 'react';
-import {Fade} from "react-awesome-reveal";
 const TeamCard = (props) => {
     return (
         // <Fade triggerOnce delay={0.8}>

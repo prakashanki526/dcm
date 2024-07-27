@@ -2,8 +2,6 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Location from '../components/Location'
 import Footer from '../components/Footer'
-import { Fade } from 'react-awesome-reveal'
-import Heading from '../components/Heading'
 
 export default function Contact() {
     return (

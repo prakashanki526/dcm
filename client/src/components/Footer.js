@@ -1,5 +1,5 @@
 import React from 'react'
-import { Fade, Slide } from 'react-awesome-reveal'
+import { Fade } from 'react-awesome-reveal'
 import InstaIcon from './icons/InstaIcon'
 import LinkedinIcon from './icons/LinkedinIcon'
 import TwitterIcon from './icons/TwitterIcon'

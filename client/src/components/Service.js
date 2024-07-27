@@ -54,7 +54,7 @@ export default function Service() {
                 <Fade direction="up" triggerOnce>
 
                     <div className='flex flex-col lg:flex-row gap-4 bg-orange-600 rounded-xl w-full p-4 md:p-6'>
-                        <img src={sgImg} className='rounded-lg' />
+                        <img src={sgImg} className='rounded-lg' alt='' />
                         <div className='text-white text-xl'>
                             <div className='text-2xl mb-2 font-bold'>SECURITY GUARD SERVICES</div>
                             <div className=''>
@@ -74,7 +74,7 @@ export default function Service() {
                 <Fade direction="up" triggerOnce>
 
                     <div className='flex flex-col lg:flex-row-reverse gap-4 bg-orange-600 rounded-xl w-full p-4 md:p-6'>
-                        <img src={hkImg} className='rounded-lg' />
+                        <img src={hkImg} className='rounded-lg' alt='' />
                         <div className='text-white text-xl'>
                             <div className='text-2xl mb-2 font-bold'>HOUSE KEEPING SERVICES</div>
                             <div className=''>

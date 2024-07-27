@@ -1,5 +1,4 @@
 import React from 'react'
-import BankIcon from './icons/BankIcon'
 
 export default function ServiceCard1(props) {
   return (
