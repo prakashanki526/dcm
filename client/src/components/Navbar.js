@@ -19,17 +19,17 @@ export default function Navbar(props) {
             <div className='px-3 md:px-24 lg:px-48 flex items-center justify-between py-1 bg-orange-600 text-white'>
                 <div>
                     <div className='md:flex space-x-2 hidden items-center'>
-                        <a href='#' target='_blank'>
+                        <a href='#' target='_blank' rel="noreferrer">
                             <FacebookIcon height="18px" fill="#ffffff" />
                         </a>
 
-                        <a href='#' target='_blank'>
+                        <a href='#' target='_blank' rel="noreferrer">
                             <TwitterIcon height='18px' fill='#ffffff' />
                         </a>
-                        <a href='#' target='_blank'>
+                        <a href='#' target='_blank' rel="noreferrer">
                             <LinkedinIcon height='18px' fill='#ffffff' />
                         </a>
-                        <a href='#' target='_blank'>
+                        <a href='#' target='_blank' rel="noreferrer">
                             <InstaIcon height='18px' fill='#ffffff' />
                         </a>
                     </div>
@@ -39,11 +39,11 @@ export default function Navbar(props) {
                     <div className='flex space-x-1 items-center'>
                         <img src={whatsappIcon} alt="whatsapp"></img>
                         <img src={phoneIcon} alt="phone"></img>
-                        <a href='tel:+91-(033) 4603 1489' target='_blank' className='hover:text-[#bdbdbd]'>+91-(033)46031489</a>
+                        <a href='tel:+91-(033) 4603 1489' target='_blank' rel="noreferrer" className='hover:text-[#bdbdbd]'>+91-(033)46031489</a>
                     </div>
                     <div className='flex space-x-1 items-center'>
                         <img src={mailIcon} alt="email"></img>
-                        <a href='mailto:email@dcm.com' target='_blank' className='hover:text-[#bdbdbd]'>email@dcm.com</a>
+                        <a href='mailto:email@dcm.com' target='_blank' rel="noreferrer" className='hover:text-[#bdbdbd]'>email@dcm.com</a>
                     </div>
 
                 </div>

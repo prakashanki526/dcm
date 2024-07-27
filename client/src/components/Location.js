@@ -35,7 +35,7 @@ export default function Location() {
                                     <div>info@fekajb.digital</div>
 
                                     <div className='mt-2 flex justify-center items-center cursor-pointer'>
-                                        <a href='https://maps.app.goo.gl/qucSXaQTPwCKnCaq7' target="_blank" className='flex'>
+                                        <a href='https://maps.app.goo.gl/qucSXaQTPwCKnCaq7' target="_blank" rel="noreferrer" className='flex'>
                                             <img src={locationIcon} alt='location' className='mr-2'></img>
                                             Directions
                                         </a>
