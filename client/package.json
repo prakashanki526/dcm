@@ -7,7 +7,10 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "chart.js": "^4.4.3",
+    "flowbite": "^2.4.1",
     "framer-motion": "^11.3.17",
+    "ng2-charts": "^6.0.1",
     "react": "^18.3.1",
     "react-awesome-reveal": "^4.2.13",
     "react-dom": "^18.3.1",
@@ -15,6 +18,7 @@
     "react-router-dom": "^6.25.1",
     "react-scripts": "5.0.1",
     "tailwind-scrollbar-hide": "^1.1.7",
+    "tw-elements-react": "^1.0.0-alpha-end",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
