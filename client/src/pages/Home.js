@@ -8,6 +8,9 @@ import intoImg from '../assets/images/intro.jpeg'
 import Footer from '../components/Footer';
 import Service from '../components/Service';
 import Location from '../components/Location';
+import PhotoGallery from '../components/PhotoGallery';
+import GetInTouch from '../components/GetInTouch';
+import Testimonials from '../components/Testimonials';
 
 
 export default function Home() {
@@ -16,7 +19,7 @@ export default function Home() {
             <Navbar page="home" />
             <div className='mt-[5.8rem]'>
                 {/* <Slider /> */}
-                <div className='h-80 md:h-[38rem] w-full bg-hero bg-cover bg-center'>
+                <div className='h-80 md:h-[38rem] w-full bg-hero bg-cover bg-center overflow-hidden'>
                     <div className='h-full w-full bg-black opacity-60 flex items-center justify-center flex-col'>
                         <div className='flex flex-col justify-center items-center tracking-widest'>
                             <motion.div animate={{ y: 0, opacity: 1 }} transition={{ type: "spring", bounce: 0, duration: 2, delay: 1 }} initial={{ y: -100, opacity: 0 }} className=' text-white font-bold transition-all leading-tight relative text-[3rem] md:text-[4rem]'>
@@ -34,7 +37,7 @@ export default function Home() {
 
                 </div>
             </div>
-            <div className='section px-3 md:px-24 lg:px-48 py-4 md:py-8 lg:py-10 bg-orange-600 text-white'>
+            <div className='section px-3 md:px-24 lg:px-48 py-4 md:py-8 lg:py-10 bg-gradient-to-r from-orange-500 to-yellow-100 overflow-hidden'>
             <Fade direction="up" triggerOnce>
                 <div className='flex flex-col-reverse md:flex-row gap-4 md:gap-8'>
                     <div className='w-full md:w-[50%]'>
@@ -49,15 +52,22 @@ export default function Home() {
                 </div>
                 </Fade>
             </div>
-            <div className='section px-3 md:px-24 lg:px-48 py-4 md:py-8 lg:py-10'>
+            <div className='section px-3 md:px-24 lg:px-48 py-4 md:py-8 lg:py-10 overflow-hidden'>
                 <div className=''>
                     <Slider />
                 </div>
             </div>
             <Service />
 
-            <Location />
+            <div className='section px-3 md:px-24 lg:px-48 py-4 md:py-8 lg:py-10 overflow-hidden'>
+                <div className=''>
+                    <PhotoGallery />
+                </div>
+            </div>
 
+            <Location />
+            <GetInTouch />
+            <Testimonials />
             <Footer />
         </div>
     )

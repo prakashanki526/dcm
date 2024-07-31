@@ -16,7 +16,7 @@ export default function Navbar(props) {
 
     return (
         <div className='fixed top-0 w-full z-50 bg-white'>
-            <div className='px-3 md:px-24 lg:px-48 flex items-center justify-between py-1 bg-orange-600 text-white'>
+            <div className='px-3 md:px-24 lg:px-48 flex items-center justify-between py-1  bg-orange-500 text-white'>
                 <div>
                     <div className='md:flex space-x-2 hidden items-center'>
                         <a href='https://facebook.com' target='_blank' rel="noreferrer">
