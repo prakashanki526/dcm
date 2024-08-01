@@ -39,10 +39,10 @@ body {
   display: none;
 }
 
-h2{
+/* h2{
   --tw-text-opacity: 1;
   color: rgb(234 88 12 / var(--tw-text-opacity))
-}
+} */
 
 .heading {
   font-size: 50px;
@@ -50,6 +50,11 @@ h2{
   text-transform: uppercase;
   text-align: center;
 }
+
+
+
+
+
 
 /* .heading-background{
   background-image: linear-gradient(to right, #f31c12, #1ba6f7, #f8c100);

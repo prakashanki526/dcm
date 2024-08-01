@@ -3,8 +3,8 @@ import { Fade } from 'react-awesome-reveal'
 import Heading from './Heading'
 import BankIcon from './icons/BankIcon'
 import ServiceCard1 from './ServiceCard1'
-import sgImg from '../assets/images/services/security-guard.jpg'
-import hkImg from '../assets/images/services/house-keeping.jpg'
+// import sgImg from '../assets/images/services/security-guard.jpg'
+// import hkImg from '../assets/images/services/house-keeping.jpg'
 import FireIcon from './icons/FireIcon'
 import LogisticIcon from './icons/LogisticIcon'
 import CorporateIcon from './icons/CorporateIcon'
@@ -14,6 +14,7 @@ import DealingIcon from './icons/DealingIcon'
 import SchoolIcon from './icons/SchoolIcon'
 import MouseIcon from './icons/MouseIcon'
 import ManagementIcon from './icons/ManagementIcon'
+import WhyChooseUs from './WhyChooseUs'
 
 export default function Service() {
     return (
@@ -27,8 +28,8 @@ export default function Service() {
 
                     </p>
                 </Fade>
-                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6'>
-                <Fade cascade damping={0.5} triggerOnce>
+                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6'>
+                    <Fade cascade damping={0.5} triggerOnce>
                         <ServiceCard1 service="Total Security Solutions" >{<TotalSec height="54px" />}</ServiceCard1>
                         <ServiceCard1 service="Providing Facility Management  " >{<ManagementIcon height="54px" />}</ServiceCard1>
                         <ServiceCard1 service="Good Faith and Fair Dealing" >{<DealingIcon height="54px" />}</ServiceCard1>
@@ -40,11 +41,11 @@ export default function Service() {
                         <ServiceCard1 service="Logistic Services" >{<LogisticIcon height="54px" />}</ServiceCard1>
                         <ServiceCard1 service="Pest and Rodent Control" >{<MouseIcon height="54px" />}</ServiceCard1>
 
-                </Fade>
-                    </div>
+                    </Fade>
+                </div>
             </div>
 
-            <div className='section px-3 md:px-24 lg:px-48 py-4 md:py-8 lg:py-10'>
+            {/* <div className='section px-3 md:px-24 lg:px-48 py-4 md:py-8 lg:py-10'>
                 <Fade direction="up" triggerOnce>
 
                     <Heading text="SOME OF OUR SERVICES" />
@@ -95,7 +96,11 @@ export default function Service() {
                         </div>
                     </Fade>
                 </div>
-            </div>
+            </div> */}
+
+            {/* <div className='section px-3 py-4 md:py-8 lg:py-10 overflow-hidden bg-gray-100'> */}
+                <WhyChooseUs />
+            {/* </div> */}
 
         </div>
     )
