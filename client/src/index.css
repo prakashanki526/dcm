@@ -39,10 +39,10 @@ body {
   display: none;
 }
 
-/* h2{
+h2{
   --tw-text-opacity: 1;
   color: rgb(234 88 12 / var(--tw-text-opacity))
-} */
+}
 
 .heading {
   font-size: 50px;

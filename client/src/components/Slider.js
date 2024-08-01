@@ -57,7 +57,7 @@ export default function Slider() {
                         <div className='absolute top-0 left-0 w-0 h-0 border-t-[500px] md:border-t-[900px] border-t-orange-500 border-r-[200px] border-r-transparent'></div>
                     <div className='flex justify-between items-center'>
                         <div className='p-6 md:px-16 z-10 md:w-[60%] flex justify-center flex-col'>
-                            <h2 className='text-3xl md:text-5xl font-bold'>{slide.title}</h2>
+                            <div className='text-3xl md:text-5xl font-bold'>{slide.title}</div>
                             <div className='text-xl md:text-2xl font-semibold text-gray-600 mt-1'>{slide.subtitle}</div>
                             {/* <p className='mt-4 text-lg md:text-xl'>Ensuring the safety and security of your premises with our expert team.</p> */}
                         </div>

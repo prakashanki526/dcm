@@ -48,7 +48,7 @@ export default function Navbar(props) {
                     <div className="text-lg font-bold">SECURITY</div>
                     <div className="hidden md:flex space-x-8">
                         <div onClick={() => navigate('/')} className={`hover:text-orange-600 cursor-pointer ${props.page === "home" && 'text-orange-600'}`}>Home</div>
-                        <div onClick={() => navigate('/about')} className={`hover:text-orange-600 cursor-pointer ${props.page === "about" && 'text-orange-600'}`}>About</div>
+                        <div onClick={() => navigate('/about')} className={`hover:text-orange-600 cursor-pointer ${props.page === "about" && 'text-orange-600'}`}>About Us</div>
                         <div onClick={() => navigate('/our-services')} className={`hover:text-orange-600 cursor-pointer ${props.page === "our-services" && 'text-orange-600'}`}>Our Services</div>
                         <div onClick={() => navigate('/contact-us')} className={`hover:text-orange-600 cursor-pointer ${props.page === "contact" && 'text-orange-600'}`}>Contact Us</div>
                         <div onClick={() => navigate('/our-team')} className={`hover:text-orange-600 cursor-pointer ${props.page === "our-team" && 'text-orange-600'}`}>Our Team</div>
@@ -74,7 +74,7 @@ export default function Navbar(props) {
                     className={`md:hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-screen' : 'max-h-0 overflow-hidden'}`}
                 >
                     <div onClick={() => navigate('/')} className="block px-4 py-2 hover:text-orange-600">Home</div>
-                    <div onClick={() => navigate('/')} className="block px-4 py-2 hover:text-orange-600">About</div>
+                    <div onClick={() => navigate('/about')} className="block px-4 py-2 hover:text-orange-600">About Us</div>
                     <div onClick={() => navigate('/our-services')} className="block px-4 py-2 hover:text-orange-600">Our Services</div>
                     <div onClick={() => navigate('/contact-us')} className="block px-4 py-2 hover:text-orange-600">Contact Us</div>
                     <div onClick={() => navigate('/our-team')} className="block px-4 py-2 hover:text-orange-600">Our Team</div>
