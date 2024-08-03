@@ -29,7 +29,7 @@ export default function Service() {
                     </p>
                 </Fade>
                 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6'>
-                    <Fade cascade damping={0.4} triggerOnce>
+                    <Fade cascade damping={0.2} triggerOnce>
                         <ServiceCard1 service="Total Security Solutions" >{<TotalSec height="54px" />}</ServiceCard1>
                         <ServiceCard1 service="Providing Facility Management  " >{<ManagementIcon height="54px" />}</ServiceCard1>
                         <ServiceCard1 service="Good Faith and Fair Dealing" >{<DealingIcon height="54px" />}</ServiceCard1>

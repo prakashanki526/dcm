@@ -51,33 +51,33 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className='section px-3 md:px-24 lg:px-48 py-4 md:py-8 lg:py-10'>
+                <div className='section px-3 md:px-24 lg:px-48 py-4 md:py-8 lg:py-10 bg-gray-200'>
                     <Heading text="Our Clients" />
 
                     <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 font-bold'>
-                        <div className='shadow-lg  flex items-center justify-center text-center rounded-lg p-4 h-32'>Banks – National & Private Sector</div>
-                        <div className='shadow-lg  flex items-center justify-center text-center rounded-lg p-4 h-32'>Corporate Offices</div>
-                        <div className='shadow-lg  flex items-center justify-center text-center rounded-lg p-4 h-32'>Government Offices – Central & States     High-rise Buildings</div>
-                        <div className='shadow-lg  flex items-center justify-center text-center rounded-lg p-4 h-32'>Hospitals and Nursing Homes </div>
-                        <div className='shadow-lg  flex items-center justify-center text-center rounded-lg p-4 h-32'>Industrial Units</div>
-                        <div className='shadow-lg  flex items-center justify-center text-center rounded-lg p-4 h-32'>Jewelers Stores</div>
-                        <div className='shadow-lg  flex items-center justify-center text-center rounded-lg p-4 h-32'>Museums</div>
-                        <div className='shadow-lg  flex items-center justify-center text-center rounded-lg p-4 h-32'>Hotels</div>
-                        <div className='shadow-lg  flex items-center justify-center text-center rounded-lg p-4 h-32'>Malls</div>
-                        <div className='shadow-lg  flex items-center justify-center text-center rounded-lg p-4 h-32'>Project Areas</div>
-                        <div className='shadow-lg  flex items-center justify-center text-center rounded-lg p-4 h-32'>Residential Complexes</div>
-                        <div className='shadow-lg  flex items-center justify-center text-center rounded-lg p-4 h-32'>Educational Institutions</div>
-                        <div className='shadow-lg  flex items-center justify-center text-center rounded-lg p-4 h-32'>Warehouses</div>
-                        <div className='shadow-lg  flex items-center justify-center text-center rounded-lg p-4 h-32'>Telecommunication Sectors</div>
-                        <div className='shadow-lg  flex items-center justify-center text-center rounded-lg p-4 h-32'>IT Sectors</div>
-                        <div className='shadow-lg  flex items-center justify-center text-center rounded-lg p-4 h-32'>Insurance Units</div>
-                        <div className='shadow-lg  flex items-center justify-center text-center rounded-lg p-4 h-32'>Manufacturing Units</div>
-                        <div className='shadow-lg  flex items-center justify-center text-center rounded-lg p-4 h-32'>Power Plants</div>
-                        <div className='shadow-lg  flex items-center justify-center text-center rounded-lg p-4 h-32'>Toll Plazas</div>
-                        <div className='shadow-lg  flex items-center justify-center text-center rounded-lg p-4 h-32'>Media & Printing Houses</div>
-                        <div className='shadow-lg  flex items-center justify-center text-center rounded-lg p-4 h-32'>Oil, Gas & Pharmaceuticals</div>
-                        <div className='shadow-lg  flex items-center justify-center text-center rounded-lg p-4 h-32'>Companies</div>
-                        <div className='shadow-lg  flex items-center justify-center text-center rounded-lg p-4 h-32'>Retail Stores</div>
+                        <div className='shadow-lg bg-gray-50  flex items-center justify-center text-center rounded-lg p-4 h-32'>Banks – National & Private Sector</div>
+                        <div className='shadow-lg bg-gray-50  flex items-center justify-center text-center rounded-lg p-4 h-32'>Corporate Offices</div>
+                        <div className='shadow-lg bg-gray-50  flex items-center justify-center text-center rounded-lg p-4 h-32'>Government Offices – Central & States     High-rise Buildings</div>
+                        <div className='shadow-lg bg-gray-50  flex items-center justify-center text-center rounded-lg p-4 h-32'>Hospitals and Nursing Homes </div>
+                        <div className='shadow-lg bg-gray-50  flex items-center justify-center text-center rounded-lg p-4 h-32'>Industrial Units</div>
+                        <div className='shadow-lg bg-gray-50  flex items-center justify-center text-center rounded-lg p-4 h-32'>Jewelers Stores</div>
+                        <div className='shadow-lg bg-gray-50  flex items-center justify-center text-center rounded-lg p-4 h-32'>Museums</div>
+                        <div className='shadow-lg bg-gray-50  flex items-center justify-center text-center rounded-lg p-4 h-32'>Hotels</div>
+                        <div className='shadow-lg bg-gray-50  flex items-center justify-center text-center rounded-lg p-4 h-32'>Malls</div>
+                        <div className='shadow-lg bg-gray-50  flex items-center justify-center text-center rounded-lg p-4 h-32'>Project Areas</div>
+                        <div className='shadow-lg bg-gray-50  flex items-center justify-center text-center rounded-lg p-4 h-32'>Residential Complexes</div>
+                        <div className='shadow-lg bg-gray-50  flex items-center justify-center text-center rounded-lg p-4 h-32'>Educational Institutions</div>
+                        <div className='shadow-lg bg-gray-50  flex items-center justify-center text-center rounded-lg p-4 h-32'>Warehouses</div>
+                        <div className='shadow-lg bg-gray-50  flex items-center justify-center text-center rounded-lg p-4 h-32'>Telecommunication Sectors</div>
+                        <div className='shadow-lg bg-gray-50  flex items-center justify-center text-center rounded-lg p-4 h-32'>IT Sectors</div>
+                        <div className='shadow-lg bg-gray-50  flex items-center justify-center text-center rounded-lg p-4 h-32'>Insurance Units</div>
+                        <div className='shadow-lg bg-gray-50  flex items-center justify-center text-center rounded-lg p-4 h-32'>Manufacturing Units</div>
+                        <div className='shadow-lg bg-gray-50  flex items-center justify-center text-center rounded-lg p-4 h-32'>Power Plants</div>
+                        <div className='shadow-lg bg-gray-50  flex items-center justify-center text-center rounded-lg p-4 h-32'>Toll Plazas</div>
+                        <div className='shadow-lg bg-gray-50  flex items-center justify-center text-center rounded-lg p-4 h-32'>Media & Printing Houses</div>
+                        <div className='shadow-lg bg-gray-50  flex items-center justify-center text-center rounded-lg p-4 h-32'>Oil, Gas & Pharmaceuticals</div>
+                        <div className='shadow-lg bg-gray-50  flex items-center justify-center text-center rounded-lg p-4 h-32'>Companies</div>
+                        <div className='shadow-lg bg-gray-50  flex items-center justify-center text-center rounded-lg p-4 h-32'>Retail Stores</div>
                     </div>
                 </div>
 

@@ -50,7 +50,7 @@ export default function Slider() {
                 ))}
             </div> */}
 
-            <div className="relative h-[16rem] overflow-hidden rounded-lg md:h-[32rem]">
+            <div className="relative h-[16rem] overflow-hidden rounded-lg md:h-[32rem] bg-gray-200">
                 {slides.map((slide, index) => (
                     <div className={`absolute block w-full transition-opacity duration-700 ease-in-out ${index === currentIndex ? 'opacity-100' : 'opacity-0'
                             }`} key={index}>
@@ -62,8 +62,8 @@ export default function Slider() {
                             {/* <p className='mt-4 text-lg md:text-xl'>Ensuring the safety and security of your premises with our expert team.</p> */}
                         </div>
     
-                        <div className='md:flex justify-center h-[28rem] hidden px-14 w-[40%]'>
-                            <img src={slide.image} alt='' className='' />
+                        <div className='md:flex justify-center h-[28rem] hidden px-14 w-[40%] items-start'>
+                            <img src={slide.image} alt='' className='h-full' />
                         </div>
                     </div>
                 </div>
