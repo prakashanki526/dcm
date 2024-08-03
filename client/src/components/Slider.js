@@ -50,7 +50,7 @@ export default function Slider() {
                 ))}
             </div> */}
 
-            <div className="relative h-[16rem] overflow-hidden rounded-lg md:h-[32rem] bg-gray-200">
+            <div className="relative h-[16rem] overflow-hidden rounded-lg md:h-[32rem] bg-white">
                 {slides.map((slide, index) => (
                     <div className={`absolute block w-full transition-opacity duration-700 ease-in-out ${index === currentIndex ? 'opacity-100' : 'opacity-0'
                             }`} key={index}>

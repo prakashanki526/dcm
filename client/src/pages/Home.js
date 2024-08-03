@@ -8,7 +8,6 @@ import intoImg from '../assets/images/intro.jpeg';
 import Footer from '../components/Footer';
 import Service from '../components/Service';
 import Location from '../components/Location';
-import PhotoGallery from '../components/PhotoGallery';
 import GetInTouch from '../components/GetInTouch';
 import Testimonials from '../components/Testimonials';
 import Cta from '../components/Cta';
@@ -41,9 +40,9 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className='section px-3 md:px-24 lg:px-48 py-4 md:py-8 lg:py-10 overflow-hidden bg-gray-200'>
+            <div className='section px-3 md:px-24 lg:px-48 py-4 md:py-8 lg:py-10 overflow-hidden'>
                 <Fade direction="up" triggerOnce>
-                    <div className='flex flex-col md:flex-row gap-4 md:gap-8 bg-white p-6 rounded-lg shadow-lg'>
+                    <div className='flex flex-col md:flex-row gap-4 md:gap-8'>
                         <div className='w-full md:w-[50%]'>
                             <img src={intoImg} className='rounded-md h-full' alt='' />
                         </div>
@@ -56,7 +55,7 @@ export default function Home() {
                     </div>
                 </Fade>
             </div>
-            <div className='section px-3 md:px-24 lg:px-48 py-4 md:py-8 lg:py-10 overflow-hidden'>
+            <div className='section px-3 md:px-24 lg:px-48 py-4 md:py-8 lg:py-10 overflow-hidden bg-gray-200'>
                 <div className=''>
                     <Slider />
                 </div>

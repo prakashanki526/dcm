@@ -10,7 +10,7 @@ export default function GetInTouch() {
                 <div className='flex flex-col-reverse md:flex-row gap-4 md:justify-between w-full'>
                 <form className="w-full max-w-lg md:w-[50%]">
                     {/* <div className="flex flex-wrap -mx-3 mb-6"> */}
-                <Fade cascade damping={0.3} triggerOnce className='flex flex-wrap -mx-3 mb-6'>
+                <Fade cascade damping={0.2} triggerOnce className='flex flex-wrap -mx-3 mb-6'>
 
                         <div className="w-full px-3 mb-0">
                             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="name">
