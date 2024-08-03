@@ -10,7 +10,7 @@ export default function About() {
             <Navbar page="about" />
 
             <div className='mt-[5.8rem]'>
-                <div className='section px-3 md:px-24 lg:px-48 py-4 md:py-8 lg:py-10 mt-[5.8rem]'>
+                <div className='section px-3 md:px-24 lg:px-40 py-4 md:py-8 lg:py-10 mt-[5.8rem]'>
                     <Heading text="About Us" />
 
                     <div className=' flex flex-col space-y-6 tracking-wide text-lg'>
@@ -51,7 +51,7 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className='section px-3 md:px-24 lg:px-48 py-4 md:py-8 lg:py-10 bg-gray-200'>
+                <div className='section px-3 md:px-24 lg:px-40 py-4 md:py-8 lg:py-10 bg-gray-200'>
                     <Heading text="Our Clients" />
 
                     <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 font-bold'>

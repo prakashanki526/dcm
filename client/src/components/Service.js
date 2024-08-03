@@ -19,7 +19,7 @@ import WhyChooseUs from './WhyChooseUs'
 export default function Service() {
     return (
         <div>
-            <div className='section px-3 md:px-24 lg:px-48 py-4 md:py-8 lg:py-10'>
+            <div className='section px-3 md:px-24 lg:px-40 py-4 md:py-8 lg:py-10'>
                 <Fade direction="up" triggerOnce>
                     <Heading text="SERVICES WE OFFER" />
                 </Fade>
@@ -45,7 +45,7 @@ export default function Service() {
                 </div>
             </div>
 
-            {/* <div className='section px-3 md:px-24 lg:px-48 py-4 md:py-8 lg:py-10'>
+            {/* <div className='section px-3 md:px-24 lg:px-40 py-4 md:py-8 lg:py-10'>
                 <Fade direction="up" triggerOnce>
 
                     <Heading text="SOME OF OUR SERVICES" />

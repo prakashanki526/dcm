@@ -18,7 +18,7 @@ export default function Home() {
     const ref = useRef();
 
     return (
-        <div className='z-0 tracking-wide md:tracking-wider'>
+        <div className='z-0 tracking-wide md:tracking-wide'>
             <Navbar page="home" />
             <div className='mt-[5.8rem]'>
                 <div className='h-80 md:h-[38rem] w-full bg-hero bg-cover bg-center overflow-hidden'>
@@ -40,7 +40,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className='section px-3 md:px-24 lg:px-48 py-4 md:py-8 lg:py-10 overflow-hidden'>
+            <div className='section px-3 md:px-24 lg:px-40 py-4 md:py-8 lg:py-10 overflow-hidden'>
                 <Fade direction="up" triggerOnce>
                     <div className='flex flex-col md:flex-row gap-4 md:gap-8'>
                         <div className='w-full md:w-[50%]'>
@@ -55,7 +55,7 @@ export default function Home() {
                     </div>
                 </Fade>
             </div>
-            <div className='section px-3 md:px-24 lg:px-48 py-4 md:py-8 lg:py-10 overflow-hidden bg-gray-200'>
+            <div className='section px-3 md:px-24 lg:px-40 py-4 md:py-8 lg:py-10 overflow-hidden bg-gray-200'>
                 <div className=''>
                     <Slider />
                 </div>
