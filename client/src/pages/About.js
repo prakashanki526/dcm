@@ -6,7 +6,7 @@ import { Fade } from 'react-awesome-reveal'
 
 export default function About() {
     return (
-        <div className='z-0 tracking-wide md:tracking-widest'>
+        <div className='z-0 tracking-wide md:tracking-wide'>
             <Navbar page="about" />
 
             <div className='mt-[5.8rem]'>

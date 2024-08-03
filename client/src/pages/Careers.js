@@ -49,7 +49,7 @@ export default function Careers() {
     };
 
     return (
-        <div className='z-0 tracking-wide md:tracking-widest'>
+        <div className='z-0 tracking-wide md:tracking-wide'>
             <div id='navbar'>
 
                 <Navbar page="careers" />

@@ -13,7 +13,7 @@ import Heading from '../components/Heading'
 
 export default function OurTeam() {
     return (
-        <div className='z-0 tracking-wide md:tracking-widest'>
+        <div className='z-0 tracking-wide md:tracking-wide'>
             <Navbar page="our-team" />
 
             <div className='section px-3 md:px-24 lg:px-40 py-4 md:py-8 lg:py-10 mt-[5.8rem]'>

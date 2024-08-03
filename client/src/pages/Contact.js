@@ -6,7 +6,7 @@ import GetInTouch from '../components/GetInTouch'
 
 export default function Contact() {
     return (
-        <div className='z-0 tracking-wide md:tracking-widest'>
+        <div className='z-0 tracking-wide md:tracking-wide'>
             <Navbar page="contact" />
 
             <div className='mt-[5.8rem]'>

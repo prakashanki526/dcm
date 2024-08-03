@@ -5,7 +5,7 @@ import PhotoGallery from '../components/PhotoGallery'
 
 export default function Gallery() {
     return (
-        <div className='z-0 tracking-wide md:tracking-widest'>
+        <div className='z-0 tracking-wide md:tracking-wide'>
             <Navbar page="gallery" />
 
             <div className='mt-[5.8rem]'>

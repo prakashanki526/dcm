@@ -6,7 +6,7 @@ import Service from '../components/Service'
 
 export default function Services() {
   return (
-    <div className='z-0 tracking-wide md:tracking-widest'>
+    <div className='z-0 tracking-wide md:tracking-wide'>
             <Navbar page="our-services" />
 
             <div className='mt-[5.8rem]'>
