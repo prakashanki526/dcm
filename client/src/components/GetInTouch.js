@@ -4,7 +4,7 @@ import getInTouchImg from '../assets/images/get-in-touch.png'
 
 export default function GetInTouch() {
     return (
-        <div className="section px-3 md:px-24 lg:px-40 py-4 md:py-8 lg:py-10">
+        <div className="section px-3 md:px-16 lg:px-40 py-4 md:py-8 lg:py-10">
             <div className="flex flex-col items-center">
                 {/* <h2 className="text-3xl font-bold mb-6">Get in Touch</h2> */}
                 <div className='flex flex-col-reverse md:flex-row gap-4 md:justify-between w-full'>

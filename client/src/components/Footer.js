@@ -8,7 +8,7 @@ import FacebookIcon from './icons/FacebookIcon'
 
 export default function Footer() {
   return (
-    <div className='flex flex-col justify-center items-center w-full py-4 px-3 md:px-24 lg:px-40 bg-white mt-6'>
+    <div className='flex flex-col justify-center items-center w-full py-4 px-3 md:px-16 lg:px-40 bg-white mt-6'>
 
 
                 <div className='w-full mb-8 border-b-2 hidden lg:block'></div>

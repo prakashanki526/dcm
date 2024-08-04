@@ -26,7 +26,7 @@ import fireImg from '../assets/images/services/fire.jpg'
 import eventImg from '../assets/images/services/event.jpg'
 import corporateImg from '../assets/images/services/corporate.jpg'
 import logisticsImg from '../assets/images/services/logistics.jpg'
-import pestImg from '../assets/images/services/pest.jpg'
+// import pestImg from '../assets/images/services/pest.jpg'
 import Heading from '../components/Heading';
 
 
@@ -112,7 +112,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className='section px-3 md:px-24 lg:px-40 py-4 md:py-8 lg:py-10 overflow-hidden bg-gray-200'>
+            <div className='section px-3 md:px-16 lg:px-40 py-4 md:py-8 lg:py-10 overflow-hidden bg-gray-200'>
                 <Fade direction="up" triggerOnce>
                     <div className='flex flex-col md:flex-row gap-4 md:gap-8'>
                         <div className='w-full md:w-[50%]'>
@@ -142,12 +142,12 @@ export default function Home() {
                     </div>
                 </Fade>
             </div>
-            <div className='section px-3 md:px-24 lg:px-40 py-4 md:py-8 lg:py-10 overflow-hidden'>
+            <div className='section px-3 md:px-16 lg:px-40 py-4 md:py-8 lg:py-10 overflow-hidden'>
                 <div className=''>
                     <Slider />
                 </div>
             </div>
-            <div className='section px-3 md:px-24 lg:px-40 py-4 md:py-8 lg:py-10 bg-gray-200'>
+            <div className='section px-3 md:px-16 lg:px-40 py-4 md:py-8 lg:py-10 bg-gray-200'>
                 <Fade direction="up" triggerOnce>
                     <Heading text="SERVICES WE OFFER" />
                 </Fade>
@@ -186,7 +186,7 @@ export default function Home() {
 
             <div ref={ref}>
                 <Location />
-                <div className='section px-3 md:px-24 lg:px-40 py-4 md:py-8 lg:py-10 bg-gray-200'>
+                <div className='section px-3 md:px-16 lg:px-40 py-4 md:py-8 lg:py-10 bg-gray-200'>
                     <Clients />
                 </div>
                 <GetInTouch />

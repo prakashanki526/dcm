@@ -19,7 +19,7 @@ export default function About() {
             <Navbar page="about" />
 
             <div className='mt-[5.8rem]'>
-                <div className='section px-3 md:px-24 lg:px-40 py-4 md:py-8 lg:py-10 mt-[5.8rem]'>
+                <div className='section px-3 md:px-16 lg:px-40 py-4 md:py-8 lg:py-10 mt-[5.8rem]'>
                     <Heading text="About Us" />
 
                     <div className='flex flex-col space-y-6 tracking-wide text-lg overflow-hidden'>
@@ -69,7 +69,7 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className='section px-3 md:px-24 lg:px-40 py-4 md:py-8 lg:py-10 bg-gray-200'>
+                <div className='section px-3 md:px-16 lg:px-40 py-4 md:py-8 lg:py-10 bg-gray-200'>
                     <Clients />
                 </div>
             </div>

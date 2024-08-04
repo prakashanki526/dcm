@@ -24,8 +24,8 @@ import fireImg from '../assets/images/services/fire.jpg'
 import eventImg from '../assets/images/services/event.jpg'
 import corporateImg from '../assets/images/services/corporate.jpg'
 import logisticsImg from '../assets/images/services/logistics.jpg'
-import pestImg from '../assets/images/services/pest.jpg'
-import Cta from './Cta'
+// import pestImg from '../assets/images/services/pest.jpg'
+// import Cta from './Cta'
 
 
 const services = [
@@ -85,7 +85,7 @@ const services = [
 export default function Service() {
     return (
         <div>
-            <div className='section px-3 md:px-24 lg:px-40 py-4 md:py-8 lg:py-10 bg-gray-200'>
+            <div className='section px-3 md:px-16 lg:px-40 py-4 md:py-8 lg:py-10 bg-gray-200'>
                 <Fade direction="up" triggerOnce>
                     <Heading text="SERVICES WE OFFER" />
                 </Fade>

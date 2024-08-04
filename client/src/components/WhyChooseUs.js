@@ -91,7 +91,7 @@ export default function WhyChooseUs() {
     };
 
     return (
-        <div className='px-3 md:px-24 lg:px-40 py-4 md:py-8 lg:py-10 bg-gray-200'>
+        <div className='px-3 md:px-16 lg:px-40 py-4 md:py-8 lg:py-10 bg-gray-200'>
             <Heading text="Why Choose Us?" />
 
             <Slider {...settings}>

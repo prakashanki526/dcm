@@ -9,7 +9,7 @@ export default function Gallery() {
             <Navbar page="gallery" />
 
             <div className='mt-[5.8rem]'>
-                <div className='section px-3 md:px-24 lg:px-40 py-4 md:py-8 lg:py-10 overflow-hidden'>
+                <div className='section px-3 md:px-16 lg:px-40 py-4 md:py-8 lg:py-10 overflow-hidden'>
                     <div className=''>
                         <PhotoGallery />
                     </div>

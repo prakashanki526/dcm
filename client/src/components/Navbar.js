@@ -14,7 +14,7 @@ export default function Navbar(props) {
 
     return (
         <div className='fixed top-0 w-full z-50 bg-white'>
-            <div className='px-3 md:px-24 lg:px-40 flex items-center justify-between py-1  bg-orange-500 text-white'>
+            <div className='px-3 md:px-16 lg:px-40 flex items-center justify-between py-1  bg-orange-500 text-white'>
                 <div>
                     <div className='md:flex space-x-2 hidden items-center'>
                         <a href='https://facebook.com' target='_blank' rel="noreferrer">
@@ -43,7 +43,7 @@ export default function Navbar(props) {
                     </div>
                 </div>
             </div>
-            <nav className="px-3 md:px-24 lg:px-40 py-4 shadow-lg">
+            <nav className="px-3 md:px-16 lg:px-40 py-4 shadow-lg">
                 <div className="container mx-auto flex justify-between items-center text-lg">
                     <div className="text-lg font-bold">SECURITY</div>
                     <div className="hidden lg:flex space-x-7">

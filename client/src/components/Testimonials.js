@@ -22,7 +22,7 @@ const testimonials = [
 
 export default function Testimonials() {
     return (
-        <div className="section px-3 md:px-24 lg:px-40 py-4 md:py-8 lg:py-10 bg-gray-200">
+        <div className="section px-3 md:px-16 lg:px-40 py-4 md:py-8 lg:py-10 bg-gray-200">
             <Fade direction="up" triggerOnce>
                 <Heading text="Testimonials" />
                 <div className="flex flex-col md:flex-row md:space-x-4">

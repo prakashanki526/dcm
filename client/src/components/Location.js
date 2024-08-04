@@ -5,7 +5,7 @@ import { Fade } from 'react-awesome-reveal'
 
 export default function Location() {
     return (
-        <div className='section px-3 md:px-24 lg:px-40 py-4 md:py-8 lg:py-10 overflow-hidden'>
+        <div className='section px-3 md:px-16 lg:px-40 py-4 md:py-8 lg:py-10 overflow-hidden'>
             <Fade direction="up" triggerOnce>
                 <Heading text="CONTACT US" />
             </Fade>
