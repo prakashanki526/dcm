@@ -1,0 +1,14 @@
+/* Add this CSS file to handle the spacing between slides and set consistent height */
+.client-slider .slick-slide {
+    margin: 0 10px; 
+}
+
+.client-slider .slick-list {
+    margin: 0 -10px;
+}
+
+.clients .slick-track{
+    width: 15500px !important;
+}
+
+

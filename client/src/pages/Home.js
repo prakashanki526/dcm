@@ -11,6 +11,13 @@ import Location from '../components/Location';
 import GetInTouch from '../components/GetInTouch';
 import Testimonials from '../components/Testimonials';
 import Cta from '../components/Cta';
+import Clients from '../components/Clients';
+import Countup from '../components/Countup';
+import experienceIcon from '../assets/icons/experience.png'
+import clientsIcon from '../assets/icons/clients.png'
+import servicemanIcon from '../assets/icons/serviceman.png'
+import employeeIcon from '../assets/icons/employees.png'
+
 
 
 
@@ -47,10 +54,25 @@ export default function Home() {
                             <img src={intoImg} className='rounded-md h-full' alt='' />
                         </div>
                         <div className='w-full md:w-[50%] text-lg text-justify'>
-                            <p>Established in 2001 as partnership firm and switched over to Pvt. Ltd. Co. on 31.03.2009. DCM Vigilance & Maintenance Services Pvt. Ltd is an ISO 9001:2008 certified company for providing Security and Facility services.</p>
-                            {/* <br /> */}
-                            <p className='mt-2'>DCM caters for offices, commercial establishments, institutions who require their properties to be protected through Security arrangement & hygienically maintained on an ongoing or once-off basis. Since 2001 DCM has expanded to over 2500 employees, providing Security, total hygiene and...</p>
-                            <Cta navigateTo="about" />
+                            <div className='flex justify-between'>
+                                <div className='flex flex-col gap-4'>
+                                    <Countup icon={experienceIcon} start={0} end={3} text="Years of Experience" />
+                                    <Countup icon={servicemanIcon} start={0} end={700} text="Ex- Serviceman" />
+                                </div>
+
+                                <div className=' flex flex-col gap-4'>
+                                    <Countup icon={clientsIcon} start={0} end={100} text="Clients in India" />
+                                    <Countup icon={employeeIcon} start={0} end={1500} text="Employees" />
+                                </div>
+                            </div>
+                            <div className='mt-4'>
+                                <p>Established in 2001 as partnership firm and switched over to Pvt. Ltd. Co. on 31.03.2009. DCM Vigilance & Maintenance Services Pvt. Ltd is an ISO 9001:2008 certified company for providing Security and Facility services.</p>
+                                {/* <br /> */}
+                                <p className='mt-2'>DCM caters for offices, commercial establishments, institutions who require their properties to be protected through Security arrangement & hygienically maintained on an ongoing...</p>
+                                <Cta navigateTo="about" />
+
+                            </div>
+
                         </div>
                     </div>
                 </Fade>
@@ -61,13 +83,18 @@ export default function Home() {
                 </div>
             </div>
             <div className=''>
-            <Service />
+                <Service />
 
             </div>
-            
-            
+
+
+
+
             <div ref={ref}>
                 <Location />
+                <div className='section px-3 md:px-24 lg:px-40 py-4 md:py-8 lg:py-10 bg-gray-200'>
+                    <Clients />
+                </div>
                 <GetInTouch />
             </div>
             <Testimonials />
