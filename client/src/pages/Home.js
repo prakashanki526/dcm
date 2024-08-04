@@ -97,7 +97,7 @@ export default function Home() {
                     <div className='h-full w-full bg-black opacity-60 flex items-center justify-center flex-col'>
                         <div className='flex flex-col justify-center items-center tracking-widest'>
                             <motion.div animate={{ y: 0, opacity: 1 }} transition={{ type: "spring", bounce: 0, duration: 1, delay: 0.7 }} initial={{ y: -100, opacity: 0 }} className='text-white font-bold transition-all leading-tight relative text-[3rem] md:text-[4rem]'>
-                                DCM
+                                DCW
                             </motion.div>
                             <motion.div animate={{ y: 0, opacity: 1 }} transition={{ type: "spring", bounce: 0, duration: 1, delay: 1.5 }} initial={{ y: 100, opacity: 0 }} className='relative text-white transition-all md:text-[2rem]'>
                                 Always for your needs
