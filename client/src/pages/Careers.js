@@ -1,52 +1,46 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Heading from '../components/Heading';
 import { Fade } from 'react-awesome-reveal';
+import { getOpenings } from '../api/discover';
+import Loader from '../components/Loader';
 
-const jobList = [
-    {
-        role: 'Security Officer',
-        description: 'Responsible for the safety and security of the premises.'
-    },
-    {
-        role: 'Facility Manager',
-        description: 'Oversee the maintenance and smooth operation of facilities.'
-    },
-    {
-        role: 'HR Manager',
-        description: 'Manage HR functions including recruitment, training, and employee relations.'
-    }
-];
 
 export default function Careers() {
     const [selectedJob, setSelectedJob] = useState(null);
     const [showForm, setShowForm] = useState(false);
+    const [jobList, setJobList] = useState([]);
+
+    async function fetchJobs() {
+        setLoading(true);
+        const list = await getOpenings();
+        setLoading(false);
+        setJobList(list);
+    }
+
+    useEffect(() => {
+        fetchJobs();
+    }, [])
 
     const targetDivRef = useRef(null);
 
     const handleApplyClick = (job) => {
         setSelectedJob(job);
         setShowForm(true);
-        // ref.current?.scrollIntoView({ behavior: 'smooth' })
-        // if (targetDivRef.current) {
-        //     const targetPosition = targetDivRef.current.getBoundingClientRect().top + window.scrollY;
-        //     window.scrollTo({
-        //         top: targetPosition - 100,
-        //         behavior: 'smooth',
-        //     });
-        // }
 
         if (targetDivRef.current) {
             const targetPosition = targetDivRef.current.getBoundingClientRect().top + window.scrollY;
             setTimeout(() => {
-              window.scrollTo({
-                top: targetPosition - 100,
-                behavior: 'smooth',
-              });
+                window.scrollTo({
+                    top: targetPosition - 100,
+                    behavior: 'smooth',
+                });
             }, 0);
-          }
+        }
     };
+
+    const [loading, setLoading] = useState(false);
 
     return (
         <div className='z-0 tracking-wide md:tracking-wide'>
@@ -58,25 +52,27 @@ export default function Careers() {
             <div className='mt-[5.8rem] bg-gray-200'>
                 <div className='section px-3 md:px-16 lg:px-40 py-4 md:py-8 lg:py-10 overflow-hidden'>
                     {/* <div className='px-3 md:px-16 lg:px-48 py-4 md:py-8 lg:py-10'> */}
-                    <Heading text="Careers" />
-                <Fade direction="up" triggerOnce>
+                    <Heading text="Job Openings" />
+                    {loading ? 
+                    <div className='h-72'><Loader /></div> :
+                    <Fade direction="up" triggerOnce>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {jobList.map((job, index) => (
-                            
-                            <div key={index} className="p-4 bg-white rounded-lg shadow-md">
-                                <h3 className="text-xl font-bold text-orange-600 mb-2">{job.role}</h3>
-                                <p className="text-gray-700 mb-4">{job.description}</p>
-                                <button
-                                    onClick={() => handleApplyClick(job)}
-                                    className="text-white bg-orange-500 hover:bg-orange-600 px-4 py-2 cursor-pointer inline-block text-sm my-2"
-                                >
-                                    Apply
-                                </button>
-                            </div>
-                        ))}
-                    </div>
-                    </Fade>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            {jobList.map((job, index) => (
+
+                                <div key={index} className="p-4 bg-white rounded-lg shadow-md">
+                                    <h3 className="text-xl font-bold text-orange-600 mb-2">{job.role}</h3>
+                                    <p className="text-gray-700 mb-4">{job.description}</p>
+                                    <button
+                                        onClick={() => handleApplyClick(job)}
+                                        className="text-white bg-orange-500 hover:bg-orange-600 px-4 py-2 cursor-pointer inline-block text-sm my-2"
+                                    >
+                                        Apply
+                                    </button>
+                                </div>
+                            ))}
+                        </div>
+                    </Fade>}
 
                     {showForm && (
                         <div className="mt-8 bg-white p-6 rounded-lg shadow-lg" ref={targetDivRef}>

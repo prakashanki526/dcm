@@ -10,7 +10,6 @@ export default function Contact() {
             <Navbar page="contact" />
 
             <div className='mt-[5.8rem]'>
-                
                     <Location />
                     <GetInTouch />
             </div>

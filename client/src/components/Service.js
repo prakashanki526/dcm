@@ -86,9 +86,9 @@ export default function Service() {
     return (
         <div>
             <div className='section px-3 md:px-16 lg:px-40 py-4 md:py-8 lg:py-10 bg-gray-200'>
-                <Fade direction="up" triggerOnce>
+                {/* <Fade direction="up" triggerOnce> */}
                     <Heading text="SERVICES WE OFFER" />
-                </Fade>
+                {/* </Fade> */}
                 <Fade direction="up" triggerOnce>
                     <p className='text-xl text-cente mb-4 md:mb-8 text-justify'>Our company provides a wide range of services to meet the needs of each sector in a dedicated and quality manner with expert on-site assistance.
 
