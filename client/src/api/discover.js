@@ -13,8 +13,8 @@ export async function postQuery(query) {
     return result.data;
 }
 
-// export async function applyForJob(formData) {
-//     const reqUrl = `http://localhost:8080/a`;
-//     const result = await axios.post(reqUrl,formData);
-//     return result.data;
-// }
+export async function applyForJob(formData) {
+    const reqUrl = `http://localhost:8080/post-application`;
+    const result = await axios.post(reqUrl,formData);
+    return result.data;
+}

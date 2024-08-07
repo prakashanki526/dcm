@@ -16,6 +16,11 @@ export default function GetInTouch() {
 
     async function handleSubmit(e) {
         e.preventDefault();
+        if(queryData.contact.length !== 10){
+            toast.error('Invalid contact no.')
+            return;
+        }
+        
         setLoading(true);
         const res = await postQuery(queryData);
         if (res.success) {
@@ -43,25 +48,25 @@ export default function GetInTouch() {
                                 <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="name">
                                     Name
                                 </label>
-                                <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="name" type="text" placeholder="Your Name" value={queryData.name} onChange={(e) => setQueryData({ ...queryData, [e.target.name]: e.target.value })} />
+                                <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="name" type="text" placeholder="Your Name" value={queryData.name} onChange={(e) => setQueryData({ ...queryData, [e.target.name]: e.target.value })} required />
                             </div>
                             <div className="w-full px-3 mb-0">
                                 <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="email">
                                     Email
                                 </label>
-                                <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="email" type="email" placeholder="Your Email" value={queryData.email} onChange={(e) => setQueryData({ ...queryData, [e.target.name]: e.target.value })} />
+                                <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="email" type="email" placeholder="Your Email" value={queryData.email} onChange={(e) => setQueryData({ ...queryData, [e.target.name]: e.target.value })} required />
                             </div>
                             <div className="w-full px-3 mb-0">
                                 <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="mobile">
                                     Mobile No
                                 </label>
-                                <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="contact" type="tel" placeholder="Your Mobile No" value={queryData.contact} onChange={(e) => setQueryData({ ...queryData, [e.target.name]: e.target.value })} />
+                                <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="contact" type="tel" placeholder="Your Mobile No" value={queryData.contact} onChange={(e) => setQueryData({ ...queryData, [e.target.name]: e.target.value })} required />
                             </div>
                             <div className="w-full px-3">
                                 <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="message">
                                     Your Query
                                 </label>
-                                <textarea className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 resize-none" name="query" placeholder="Write Your Query" value={queryData.query} onChange={(e) => setQueryData({ ...queryData, [e.target.name]: e.target.value })} rows={4}></textarea>
+                                <textarea className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 resize-none" name="query" placeholder="Write Your Query" value={queryData.query} onChange={(e) => setQueryData({ ...queryData, [e.target.name]: e.target.value })} required rows={4}></textarea>
                             </div>
                             <div className="w-full px-3">
                                 <button className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" disabled={loading}>

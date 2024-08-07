@@ -3,14 +3,19 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Heading from '../components/Heading';
 import { Fade } from 'react-awesome-reveal';
-import { getOpenings } from '../api/discover';
+import { applyForJob, getOpenings } from '../api/discover';
 import Loader from '../components/Loader';
+import toast, {Toaster} from 'react-hot-toast';
 
 
 export default function Careers() {
     const [selectedJob, setSelectedJob] = useState(null);
     const [showForm, setShowForm] = useState(false);
     const [jobList, setJobList] = useState([]);
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [contact, setContact] = useState("");
+    const [resume, setResume] = useState(null);
 
     async function fetchJobs() {
         setLoading(true);
@@ -41,9 +46,42 @@ export default function Careers() {
     };
 
     const [loading, setLoading] = useState(false);
+    const [posting, setPosting] = useState(false);
+    const fileInputRef = useRef();
+
+    async function handleSubmit(e){
+        e.preventDefault();
+
+        if(contact.length !== 10){
+            toast.error('Invalid contact no.')
+            return;
+        }
+
+        const formData = new FormData();
+        formData.append("role", selectedJob.role);
+        formData.append("name", name);
+        formData.append("email", email);
+        formData.append("contact", contact);
+        formData.append("resume", resume);
+        
+        setPosting(true)
+        const res = await applyForJob(formData);
+        if(res.status==='ok'){
+            toast.success('Applied Successfully')
+            setName("");
+            setEmail('');
+            setContact('')
+            setResume(null)
+            fileInputRef.current.value = '';
+        } else{
+            toast.error('Server error. Please try again later.')
+        }
+        setPosting(false);
+    }
 
     return (
         <div className='z-0 tracking-wide md:tracking-wide'>
+            <Toaster />
             <div id='navbar'>
 
                 <Navbar page="careers" />
@@ -77,25 +115,27 @@ export default function Careers() {
                     {showForm && (
                         <div className="mt-8 bg-white p-6 rounded-lg shadow-lg" ref={targetDivRef}>
                             <h3 className="text-2xl font-semibold text-center mb-4">Apply for <span className='font-bold text-orange-600'>{selectedJob.role}</span></h3>
-                            <form className="space-y-4">
+                            <form className="space-y-4" onSubmit={handleSubmit}>
                                 <div>
                                     <label className="block text-gray-700">Name</label>
-                                    <input type="text" className="w-full p-2 border-0 focus:outline-none rounded bg-gray-100" />
+                                    <input type="text" className="w-full p-2 border-0 focus:outline-none rounded bg-gray-100" value={name} onChange={(e)=>setName(e.target.value)} required />
                                 </div>
                                 <div>
                                     <label className="block text-gray-700">Email</label>
-                                    <input type="email" className="w-full p-2 border-0 focus:outline-none rounded bg-gray-100" />
+                                    <input type="email" className="w-full p-2 border-0 focus:outline-none rounded bg-gray-100" value={email} onChange={(e)=>setEmail(e.target.value)} required />
                                 </div>
                                 <div>
                                     <label className="block text-gray-700">Contact</label>
-                                    <input type="text" className="w-full p-2 border-0 focus:outline-none rounded bg-gray-100" />
+                                    <input type="text" className="w-full p-2 border-0 focus:outline-none rounded bg-gray-100" value={contact} onChange={(e)=>setContact(e.target.value)} required />
                                 </div>
                                 <div>
                                     <label className="block text-gray-700">Resume</label>
-                                    <input type="file" accept="application/pdf" className="w-full p-2 border-0 focus:outline-none rounded bg-gray-100" />
+                                    <input type="file" accept="application/pdf" className="w-full p-2 border-0 focus:outline-none rounded bg-gray-100" onChange={(e)=>setResume(e.target.files[0])} required  ref={fileInputRef} />
                                 </div>
                                 <div className="text-center">
-                                    <button type="submit" className="text-white bg-orange-500 hover:bg-orange-600 px-6 py-3 cursor-pointer inline-block text-sm my-2">Submit</button>
+                                    <button type="submit" className="text-white bg-orange-500 hover:bg-orange-600 px-6 py-3 cursor-pointer inline-block text-sm my-2" value={resume} disabled={posting}>
+                                    {loading ? "Submitting..." : "Submit"}
+                                    </button>
                                 </div>
                             </form>
                         </div>
