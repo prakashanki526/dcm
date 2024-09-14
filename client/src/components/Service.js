@@ -121,7 +121,7 @@ export default function Service() {
                                 <div className=''>
                                     <img src={service.image} alt={service.service} className='h-52 w-full rounded-lg' />
                                 </div>
-                                <div className=''>
+                                <div className='md:h-60 overflow-scroll'>
                                     <div className='font-semibold text-xl text-orange-600'>{service.service}</div>
                                     <div className='text-justify'>
                                         {service.description}

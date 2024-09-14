@@ -83,7 +83,7 @@ export default function About() {
 
                     <div className='flex flex-col space-y-6 tracking-wide text-lg overflow-hidden'>
                         <Fade direction="up" triggerOnce>
-                            <div className='flex flex-col md:flex-row gap-6'>
+                            <div className='flex flex-col md:flex-row gap-6 md:gap-12'>
                                 <img src={visionImg} className='h-80 object-cover' alt='' />
                                 <div className='text-justify'>
                                 Our vision is to be the foremost provider of security and facility management services, setting industry standards through our commitment to excellence, reliability, and tailored solutions. We aim to safeguard and maintain properties with the highest levels of professionalism, ensuring safe, hygienic, and efficiently managed environments for our clients. By leveraging the expertise of our dedicated professionals and continuously evolving to meet the changing needs of the industries we serve, we strive to build enduring partnerships based on trust, quality, and innovation.
@@ -98,7 +98,7 @@ export default function About() {
 
                     <div className='flex flex-col space-y-6 tracking-wide text-lg overflow-hidden'>
                         <Fade direction="up" triggerOnce>
-                            <div className='flex flex-col md:flex-row-reverse gap-6'>
+                            <div className='flex flex-col md:flex-row-reverse gap-6 md:gap-12'>
                                 <img src={missionImg} className='h-80 object-cover' alt='' />
                                 <div className='text-justify'>
                                 Our mission is to continuously achieve our goals by delivering superior security and facility management services across India. We are dedicated to expanding our presence nationwide, reaching new markets, and enhancing our capabilities. Through innovation, rigorous training, and a client-focused approach, we strive to provide reliable and tailored solutions that protect and maintain our clients' properties. Our commitment is to grow steadily while upholding the highest standards of service and fostering lasting relationships built on trust and excellence.

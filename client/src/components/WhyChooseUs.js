@@ -15,10 +15,6 @@ export default function WhyChooseUs() {
             description: " Our management team includes highly experienced professionals, many of whom are retired from the Air Force, Army, and other defense forces. Their leadership brings unmatched discipline, strategic insight, and operational excellence to every project we undertake."
         },
         {
-            title: "Customized Solutions",
-            description: "We tailor our security services to meet the specific needs of each client, ensuring the highest level of protection."
-        },
-        {
             title: "Tailored Solutions",
             description: " We understand that every client’s needs are unique. That’s why we offer customized solutions ranging from security and housekeeping to firefighting, pest control, and maintenance services like carpentry and plumbing. Whether it's ongoing services or one-off projects, we adapt to meet your specific requirements."
         },

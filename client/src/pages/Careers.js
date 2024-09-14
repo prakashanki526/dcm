@@ -6,6 +6,7 @@ import { Fade } from 'react-awesome-reveal';
 import { applyForJob, getOpenings } from '../api/discover';
 import Loader from '../components/Loader';
 import toast, {Toaster} from 'react-hot-toast';
+import formImg from '../assets/images/form.png'
 
 
 export default function Careers() {
@@ -15,6 +16,7 @@ export default function Careers() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [contact, setContact] = useState("");
+    const [qualification, setQualification] = useState("");
     const [resume, setResume] = useState(null);
 
     async function fetchJobs() {
@@ -62,6 +64,7 @@ export default function Careers() {
         formData.append("name", name);
         formData.append("email", email);
         formData.append("contact", contact);
+        formData.append("qualification", qualification);
         formData.append("resume", resume);
         
         setPosting(true)
@@ -71,6 +74,7 @@ export default function Careers() {
             setName("");
             setEmail('');
             setContact('')
+            setQualification('')
             setResume(null)
             fileInputRef.current.value = '';
         } else{
@@ -113,31 +117,40 @@ export default function Careers() {
                     </Fade>}
 
                     {showForm && (
-                        <div className="mt-8 bg-white p-6 rounded-lg shadow-lg" ref={targetDivRef}>
-                            <h3 className="text-2xl font-semibold text-center mb-4">Apply for <span className='font-bold text-orange-600'>{selectedJob.role}</span></h3>
-                            <form className="space-y-4" onSubmit={handleSubmit}>
-                                <div>
-                                    <label className="block text-gray-700">Name</label>
-                                    <input type="text" className="w-full p-2 border-0 focus:outline-none rounded bg-gray-100" value={name} onChange={(e)=>setName(e.target.value)} required />
-                                </div>
-                                <div>
-                                    <label className="block text-gray-700">Email</label>
-                                    <input type="email" className="w-full p-2 border-0 focus:outline-none rounded bg-gray-100" value={email} onChange={(e)=>setEmail(e.target.value)} required />
-                                </div>
-                                <div>
-                                    <label className="block text-gray-700">Contact</label>
-                                    <input type="text" className="w-full p-2 border-0 focus:outline-none rounded bg-gray-100" value={contact} onChange={(e)=>setContact(e.target.value)} required />
-                                </div>
-                                <div>
-                                    <label className="block text-gray-700">Resume</label>
-                                    <input type="file" accept="application/pdf" className="w-full p-2 border-0 focus:outline-none rounded bg-gray-100" onChange={(e)=>setResume(e.target.files[0])} required  ref={fileInputRef} />
-                                </div>
-                                <div className="text-center">
-                                    <button type="submit" className="text-white bg-orange-500 hover:bg-orange-600 px-6 py-3 cursor-pointer inline-block text-sm my-2" value={resume} disabled={posting}>
-                                    {loading ? "Submitting..." : "Submit"}
-                                    </button>
-                                </div>
-                            </form>
+                        <div className="mt-8 bg-white p-6 rounded-lg shadow-lg flex md:justify-between gap-10" ref={targetDivRef}>
+                            <div className='w-full md:w-[50%]'>
+                                <h3 className="text-2xl font-semibold text-center mb-4">Apply for <span className='font-bold text-orange-600'>{selectedJob.role}</span></h3>
+                                <form className="space-y-4" onSubmit={handleSubmit}>
+                                    <div>
+                                        <label className="block text-gray-700">Name *</label>
+                                        <input type="text" className="w-full p-2 border-0 focus:outline-none rounded bg-gray-100" value={name} onChange={(e)=>setName(e.target.value)} required />
+                                    </div>
+                                    <div>
+                                        <label className="block text-gray-700">Email</label>
+                                        <input type="email" className="w-full p-2 border-0 focus:outline-none rounded bg-gray-100" value={email} onChange={(e)=>setEmail(e.target.value)} />
+                                    </div>
+                                    <div>
+                                        <label className="block text-gray-700">Contact *</label>
+                                        <input type="text" className="w-full p-2 border-0 focus:outline-none rounded bg-gray-100" value={contact} onChange={(e)=>setContact(e.target.value)} required />
+                                    </div>
+                                    <div>
+                                        <label className="block text-gray-700">Qualification</label>
+                                        <input type="text" className="w-full p-2 border-0 focus:outline-none rounded bg-gray-100" value={contact} onChange={(e)=>setContact(e.target.value)} />
+                                    </div>
+                                    <div>
+                                        <label className="block text-gray-700">Resume</label>
+                                        <input type="file" accept="application/pdf" className="w-full p-2 border-0 focus:outline-none rounded bg-gray-100" onChange={(e)=>setResume(e.target.files[0])}  ref={fileInputRef} />
+                                    </div>
+                                    <div className="text-center">
+                                        <button type="submit" className="text-white bg-orange-500 hover:bg-orange-600 px-6 py-3 cursor-pointer inline-block text-sm my-2" value={resume} disabled={posting}>
+                                        {loading ? "Submitting..." : "Submit"}
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div className='hidden md:flex w-[50%] justify-end'>
+                                <img src={formImg} alt='' className='' />
+                            </div>
                         </div>
                     )}
                     {/* </div> */}

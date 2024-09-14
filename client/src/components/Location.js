@@ -57,14 +57,18 @@ export default function Location() {
                                 <div className='flex flex-col items-center md:items-start justify-center mb-2'>
                                     {/* <img src={phoneIcon} alt='phone' className='mr-2 w-5 h-5' /> */}
                                     <div className='font-bold'>Call Us : </div>
-                                    <div>+91-(033) 4603 1489</div>
+                                    <div>
+                                    <a href='tel:+91-(033) 4603 1489'>+91-033 46031489</a>
+                                    </div>
                                 </div>
                                 <div className='flex flex-col items-center md:items-start justify-center'>
                                     {/* <img src={emailIcon} alt='email' className='mr-2 w-5 h-5' /> */}
                                     <div className='font-bold'>Email Us</div>
 
-                                    <div>abc@aejbj.digital</div>
-                                    <div>info@fekajb.digital</div>
+                                    <div>
+                                    <a href="mailto:caredcm@dcmvigilance.com">caredcm@dcmvigilance.com</a>
+                                    </div>
+                                    
                                 </div>
                                 </div>
 

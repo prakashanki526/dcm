@@ -35,11 +35,11 @@ export default function Navbar(props) {
                     <div className='flex space-x-1 items-center'>
                         <img src={whatsappIcon} alt="whatsapp" />
                         <img src={phoneIcon} alt="phone" />
-                        <a href='tel:+91-(033) 4603 1489' target='_blank' rel="noreferrer" className='hover:text-[#bdbdbd]'>+91-(033)46031489</a>
+                        <a href='tel:+91-033 46031489' target='_blank' rel="noreferrer" className='hover:text-[#bdbdbd]'>+91-033 46031489</a>
                     </div>
                     <div className='flex space-x-1 items-center'>
                         <img src={mailIcon} alt="email" />
-                        <a href='mailto:email@dcm.com' target='_blank' rel="noreferrer" className='hover:text-[#bdbdbd]'>email@dcm.com</a>
+                        <a href='mailto:caredcm@dcmvigilance.com' target='_blank' rel="noreferrer" className='hover:text-[#bdbdbd]'>caredcm@dcmvigilance.com</a>
                     </div>
                 </div>
             </div>
