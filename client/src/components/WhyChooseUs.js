@@ -7,28 +7,48 @@ import 'slick-carousel/slick/slick-theme.css';
 export default function WhyChooseUs() {
     const data = [
         {
-            title: "Experience and Expertise",
-            description: "With a proven track record in the security industry, we have the knowledge and skills to handle a wide range of security challenges."
+            title: "Proven Track Record",
+            description: "With over two decades of experience in the security and facility management industry, DCM Vigilance & Maintenance Services Pvt. Ltd. has established itself as a trusted name. Our commitment to quality and reliability has made us a preferred partner for commercial and industrial sectors across India."
+        },
+        {
+            title: "Expert Leadership",
+            description: " Our management team includes highly experienced professionals, many of whom are retired from the Air Force, Army, and other defense forces. Their leadership brings unmatched discipline, strategic insight, and operational excellence to every project we undertake."
         },
         {
             title: "Customized Solutions",
             description: "We tailor our security services to meet the specific needs of each client, ensuring the highest level of protection."
         },
         {
+            title: "Tailored Solutions",
+            description: " We understand that every client’s needs are unique. That’s why we offer customized solutions ranging from security and housekeeping to firefighting, pest control, and maintenance services like carpentry and plumbing. Whether it's ongoing services or one-off projects, we adapt to meet your specific requirements."
+        },
+        {
+            title: "Commitment to Quality",
+            description: "As an ISO 9001:2008 certified company, we prioritize quality in everything we do. Our staff undergoes rigorous selection, induction training, and continuous supervision to ensure they meet our high standards, while regular inspections guarantee that our service quality never wavers."
+        },
+        {
             title: "Reliability and Trust",
             description: "Our clients trust us for our reliability, professionalism, and commitment to their safety."
         },
         {
-            title: "Advanced Technology",
-            description: "We leverage the latest security technologies, including state-of-the-art surveillance systems, access control, and real-time monitoring, to provide cutting-edge security solutions."
+            title: "Advanced Equipment and Methods",
+            description: "We utilize ISI-branded equipment and proven chemicals to ensure that we deliver superior results. Our commitment to innovation and safety allows us to maintain hygienic, secure, and efficient environments for our clients."
         },
         {
             title: "Highly Trained Personnel",
             description: "Our security team undergoes rigorous training and continuous education to stay ahead of emerging threats and industry standards."
         },
         {
-            title: "24/7 Support",
-            description: "We offer round-the-clock support and monitoring to ensure that your security needs are met at all times, day or night."
+            title: "Comprehensive Support",
+            description: "We maintain open lines of communication with our clients, ensuring that any issues are addressed immediately. Our senior management and area supervisors conduct regular on-site visits, providing hands-on support and ensuring that service standards are consistently met."
+        },
+        {
+            title: "Nationwide Reach and Expanding Network",
+            description: "Employing over 5000+ skilled professionals, we serve a wide range of clients across India, from offices to large commercial establishments. Our expanding presence ensures that we can meet the growing demands of various sectors nationwide."
+        },
+        {
+            title: "Safety and Compliance",
+            description: "We strictly adhere to occupational health standards, ensuring a safe working environment for both our staff and clients. Our commitment to safety is embedded in all our processes."
         },
         {
             title: "Comprehensive Risk Assessment",
@@ -52,11 +72,15 @@ export default function WhyChooseUs() {
         },
         {
             title: "Cost-Effective Solutions",
-            description: "We provide high-quality security services at competitive prices, delivering exceptional value for your investment."
+            description: " We provide competitive rates without compromising on the quality of our services. Our cost-effective solutions ensure that you get the best value while maintaining high standards of security and facility management."
         },
         {
             title: "Innovative Practices",
             description: "We continuously innovate and adapt our practices to stay at the forefront of the security industry, ensuring our clients benefit from the latest advancements."
+        },
+        {
+            title: "Diverse Service Offerings",
+            description: "Beyond security and cleaning services, we offer a range of additional facility management solutions such as manpower outsourcing, pest control, and beverage services. This diverse portfolio makes us a one-stop solution for all your facility management needs."
         },
         {
             title: "Client Satisfaction",
@@ -91,16 +115,20 @@ export default function WhyChooseUs() {
     };
 
     return (
-        <div className='px-3 md:px-16 lg:px-40 py-4 md:py-8 lg:py-10 bg-gray-200'>
+        <div className='px-3 md:px-16 lg:px-40 py-8 md:py-8 lg:py-10 bg-gray-200'>
             <Heading text="Why Choose Us?" />
+
+            <div className='mt-8 text-center text-lg font-[500]'>
+                By choosing DCM Vigilance & Maintenance Services Pvt. Ltd., you are selecting a partner who is dedicated to protecting and maintaining your property with professionalism, efficiency, and the highest standards of service.
+            </div>
 
             <Slider {...settings}>
                 {data.map((item, index) => (
-                    <div key={index} className="p-4 h-60 md:h-[17rem] mb-4">
+                    <div key={index} className="p-4 h-80 md:h-[20rem] mb-4">
                         <div className="bg-white p-6 rounded-lg shadow-lg h-full flex flex-col justify-between transition-transform transform hover:scale-110 hover:shadow-xl duration-700">
                             <div>
                                 <div className='text-2xl font-bold text-orange-600 mb-1'>{item.title}</div>
-                                <div className='text-gray-700'>{item.description}</div>
+                                <div className='text-gray-700 text-justify'>{item.description}</div>
                             </div>
                         </div>
                     </div>

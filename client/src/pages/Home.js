@@ -26,7 +26,9 @@ import fireImg from '../assets/images/services/fire.jpg'
 import eventImg from '../assets/images/services/event.jpg'
 import corporateImg from '../assets/images/services/corporate.jpg'
 import logisticsImg from '../assets/images/services/logistics.jpg'
-// import pestImg from '../assets/images/services/pest.jpg'
+import pantryImg from '../assets/images/services/pantry.jpg'
+import repairImg from '../assets/images/services/repair.jpg'
+import cleaningImg from '../assets/images/services/cleaning.jpg'
 import Heading from '../components/Heading';
 
 
@@ -37,23 +39,23 @@ const services = [
         image: totalSecImg
     },
     {
-        service: "Providing Facility Management",
+        service: "Integrated Facility Management System",
         description: "Offering complete facility management services for efficient operations. Our comprehensive solutions include maintenance, housekeeping, and logistical support, ensuring your facilities are always in optimal condition. Our goal is to create a safe, clean, and functional environment for your business operations.",
         image: facilityImg
     },
     {
-        service: "Good Faith and Fair Dealing",
-        description: "Maintaining trust and integrity in all our dealings. We prioritize ethical practices and transparency in every interaction with our clients and partners. Our commitment to good faith and fair dealing ensures that we build strong, lasting relationships based on mutual respect and trust.",
+        service: "Manpower outsourcing and payroll",
+        description: "Our company specializes in manpower outsourcing and payroll services, providing businesses with efficient workforce solutions. We handle staffing, and payroll management, ensuring compliance and accuracy. With our expertise, businesses can focus on growth, offering flexibility and cost-effective solutions tailored to their specific requirements.",
         image: fairImg
     },
     {
-        service: "Highly Qualified Professionals",
-        description: "Employing highly skilled and trained professionals. Our team consists of experts with extensive experience and specialized training in their respective fields. We invest in continuous education and professional development to ensure our staff stays ahead of industry standards and emerging threats.",
-        image: qualifiedProfImg
+        service: "Repair and maintenance",
+        description: "We provide reliable repair and maintenance services to keep your equipment and facilities running smoothly. Our skilled technicians handle routine maintenance and urgent repairs, minimizing downtime and ensuring efficiency, so your business can operate without interruptions. Trust us for cost-effective solutions.",
+        image: repairImg
     },
     {
-        service: "Banks & ATM Security",
-        description: "Ensuring the security of banks and ATMs with specialized services. Our security solutions are designed to protect financial institutions from a wide range of threats, including theft, vandalism, and fraud. We deploy advanced surveillance systems and security protocols to safeguard your assets and provide peace of mind.",
+        service: "Electronic security",
+        description: "We specialize in electronic security solutions, offering advanced systems to protect your business. From CCTV surveillance to access control and alarm systems, our cutting-edge technology ensures the safety of your premises. Rely on us for customized, secure, and reliable protection solutions.",
         image: bankImg
     },
     {
@@ -62,25 +64,20 @@ const services = [
         image: fireImg
     },
     {
-        service: "Event Security Management",
-        description: "Managing security for events to ensure safety and order. We provide tailored security solutions for events of all sizes, from small gatherings to large-scale public events. Our team ensures crowd control, access management, and emergency response planning to create a secure environment for all attendees.",
-        image: eventImg
+        service: "Deep cleaning & pest control",
+        description: "Our company offers deep cleaning and pest control services to maintain a spotless and hygienic environment. From thorough cleaning of hard-to-reach areas to effective pest elimination, we ensure a safe, healthy, and pest-free space for your home or business.",
+        image: cleaningImg
     },
     {
-        service: "Corporate Security",
-        description: "Providing security services tailored to corporate needs. We understand the unique security challenges faced by businesses and offer customized solutions to protect your corporate assets, personnel, and reputation. Our services include access control, surveillance, and threat assessment, ensuring a secure business environment.",
-        image: corporateImg
+        service: "Pantry",
+        description: "We provide pantry services to ensure a well-stocked and organized kitchen space for your office or business. From inventory management to regular restocking of supplies, our services create a seamless and efficient pantry experience, keeping your team refreshed and satisfied.",
+        image: pantryImg
     },
     {
-        service: "Logistic Services",
+        service: "Logistic and Transportation Services",
         description: "Offering reliable logistic services to meet your needs. Our logistic solutions are designed to optimize the flow of goods and services within your organization. We provide efficient transportation, warehousing, and distribution services, ensuring timely and secure delivery of your products and materials.",
         image: logisticsImg
     }
-    // {
-    //     service: "Pest and Rodent Control",
-    //     description: "Providing effective pest and rodent control solutions. Our pest management services include thorough inspections, customized treatment plans, and preventive measures to keep your premises pest-free. We use safe and environmentally friendly methods to eliminate infestations and protect your property from future threats.",
-    //     image: pestImg
-    // }
 ];
 
 

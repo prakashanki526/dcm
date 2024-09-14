@@ -1,18 +1,27 @@
 import React from 'react';
+
 const TeamCard = (props) => {
     return (
-        // <Fade triggerOnce delay={0.8}>
-        <div className={`group w-fit h-full my-2 lg:mx-2 cursor-pointer shadow-xl relative md:hover:scale-110 transition-all duration-500`}>
-            <img src={props.img} alt={props.name} className='h-full'></img>
+        <div className='group bg-white shadow-xl rounded-lg overflow-hidden transition-all duration-500 hover:shadow-2xl'>
+            <div className='relative'>
+                <img src={props.img} alt={props.name} className='w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500' />
+            </div>
 
-            <div className={`absolute flex bottom-0 w-full bg-orange-600 text-white py-1 justify-center items-center opacity-80`}>
-                <div className='flex flex-col justify-center items-center tracking-wider'>
-                    <div className='text-xl md:text-2xl text-center font-semibold'>{props.name}</div>
-                    <div className='text-sm md:text-lg text-center'>{props.position}</div>
-                </div>
+            <div className='p-6'>
+                <h3 className='text-xl font-semibold text-center mb-2'>{props.name}</h3>
+                <h4 className='text-lg text-orange-600 text-center mb-4'>{props.position}</h4>
+                <p className='text-gray-600 text-sm leading-relaxed transition-opacity duration-300 text-center md:hidden italic'>
+                    "{props.description}"
+                </p>
+            </div>
+
+            {/* Description Overlay on Hover */}
+            <div className='hidden absolute top-0 left-0 w-full h-full bg-black bg-opacity-75 opacity-0 group-hover:opacity-100 transition-all duration-500 md:flex justify-center items-center rounded-lg'>
+                <p className='text-white p-4 text-center text-sm md:text-base italic'>
+                    "{props.description}"
+                </p>
             </div>
         </div>
-        // </Fade>
     );
 };
 

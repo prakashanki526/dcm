@@ -6,8 +6,12 @@ import Services from "./pages/Services";
 import About from "./pages/About";
 import Gallery from "./pages/Gallery";
 import Careers from "./pages/Careers";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    window.history.scrollRestoration = 'manual'
+  }, []);
   return (
     <BrowserRouter>
       <Routes>
