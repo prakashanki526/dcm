@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import guardImg1 from '../assets/images/guard1.png'
-import guardImg2 from '../assets/images/guard2.png'
-import guardImg3 from '../assets/images/guard3.png'
+import guardImg1 from '../assets/images/s1.png'
+import guardImg2 from '../assets/images/s2.png'
+import guardImg3 from '../assets/images/s3.png'
 
 export default function Slider() {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -62,8 +62,8 @@ export default function Slider() {
                             {/* <p className='mt-4 text-lg md:text-xl'>Ensuring the safety and security of your premises with our expert team.</p> */}
                         </div>
     
-                        <div className='md:flex justify-center h-[28rem] hidden px-14 w-[40%] items-start'>
-                            <img src={slide.image} alt='' className='h-full' />
+                        <div className='md:flex justify-center h-[28rem] hidden px-14 w-[40%] items-center'>
+                            <img src={slide.image} alt='' className='h-full scale-110' />
                         </div>
                     </div>
                 </div>

@@ -11,6 +11,7 @@ import servicemanIcon from '../assets/icons/serviceman.png'
 import employeeIcon from '../assets/icons/employees.png'
 import visionImg from '../assets/images/about/OurVision.jpeg'
 import missionImg from '../assets/images/about/OurMission.jpeg'
+import Award from '../components/icons/Award'
 
 
 export default function About() {
@@ -78,7 +79,70 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className='section px-3 md:px-16 lg:px-40 py-4 md:py-8 lg:py-10 bg-gray-200'>
+                {/* Certifications Section */}
+                <div className='section px-3 md:px-16 lg:px-40 py-4 md:py-8 lg:py-10 bg-gray-200' id='certificates'>
+                    <Heading text="Certifications" />
+
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
+                        {/* Card 1 */}
+                        <div className='bg-white shadow-lg rounded-lg p-6 hover:scale-110 transition-all duration-500'>
+                            <div className='flex space-x-2'>
+                                <Award height="2rem" />
+                                <div className=''>
+
+                            <h3 className='text-2xl font-bold mb-2'>ISO 9001:2015</h3>
+                                </div>
+                            </div>
+                            <p className='text-l text-gray-500 font-semibold text-center'>
+                                This certification demonstrates our commitment to quality management systems that meet international standards, ensuring consistent service quality.
+                            </p>
+                        </div>
+
+                        {/* Card 2 */}
+                        <div className='bg-white shadow-lg rounded-lg p-6 hover:scale-110 transition-all duration-500'>
+                            <div className='flex space-x-2'>
+                                <Award height="2rem" />
+                                <div className=''>
+
+                            <h3 className='text-2xl font-bold mb-2'>ISO 45001:2018</h3>
+                                </div>
+                            </div>
+                            <p className='text-l text-gray-500 font-semibold text-center'>
+                                Focused on occupational health and safety, this certification ensures that we maintain a safe work environment and reduce workplace risks.
+                            </p>
+                        </div>
+
+                        {/* Card 3 */}
+                        <div className='bg-white shadow-lg rounded-lg p-6 hover:scale-110 transition-all duration-500'>
+                            <div className='flex space-x-2'>
+                                <Award height="2rem" />
+                                <div className=''>
+
+                            <h3 className='text-2xl font-bold mb-2'>ISO 14001:2015</h3>
+                                </div>
+                            </div>
+                            <p className='text-l text-gray-500 font-semibold text-center'>
+                                Our environmental management systems certification highlights our efforts to minimize the environmental impact of our operations.
+                            </p>
+                        </div>
+
+                        {/* Card 4 */}
+                        <div className='bg-white shadow-lg rounded-lg p-6 hover:scale-110 transition-all duration-500'>
+                            <div className='flex space-x-2'>
+                                <Award height="2rem" />
+                                <div className=''>
+
+                            <h3 className='text-2xl font-bold mb-2'>SA 8000:2014</h3>
+                                </div>
+                            </div>
+                            <p className='text-l text-gray-500 font-semibold text-center'>
+                                SA 8000 certification reflects our dedication to ethical and socially responsible business practices, including fair labor standards.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='section px-3 md:px-16 lg:px-40 py-4 md:py-8 lg:py-10'>
                     <Heading text="Our Vision" />
 
                     <div className='flex flex-col space-y-6 tracking-wide text-lg overflow-hidden'>
@@ -93,7 +157,7 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className='section px-3 md:px-16 lg:px-40 py-4 md:py-8 lg:py-10'>
+                <div className='section px-3 md:px-16 lg:px-40 py-4 md:py-8 lg:py-10 bg-gray-200'>
                     <Heading text="Our Mission" />
 
                     <div className='flex flex-col space-y-6 tracking-wide text-lg overflow-hidden'>
@@ -108,7 +172,7 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className='section px-3 md:px-16 lg:px-40 py-4 md:py-8 lg:py-10 bg-gray-200'>
+                <div className='section px-3 md:px-16 lg:px-40 py-4 md:py-8 lg:py-10 bg-gray-'>
                     <Clients />
                 </div>
             </div>

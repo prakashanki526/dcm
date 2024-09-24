@@ -30,6 +30,9 @@ import pantryImg from '../assets/images/services/pantry.jpg'
 import repairImg from '../assets/images/services/repair.jpg'
 import cleaningImg from '../assets/images/services/cleaning.jpg'
 import Heading from '../components/Heading';
+import certificateIcon from '../assets/images/cs-logo13.svg'
+import { useNavigate } from 'react-router-dom';
+
 
 
 const services = [
@@ -85,6 +88,14 @@ const services = [
 
 export default function Home() {
     const ref = useRef();
+    const navigate = useNavigate();
+
+    function handleCertifications(){
+        navigate("/about");
+        setTimeout(() => {
+        const certificationSection = document.getElementById("certificates");
+        certificationSection.scrollIntoView({ behavior: "smooth" });
+    },500)}
 
     return (
         <div className='z-0 tracking-wide md:tracking-wide'>
@@ -131,7 +142,16 @@ export default function Home() {
                                 <p>Established in 2001 as partnership firm and switched over to Pvt. Ltd. Co. on 31.03.2009. DCM Vigilance & Maintenance Services Pvt. Ltd is an ISO 9001:2008 certified company for providing Security and Facility services.</p>
                                 {/* <br /> */}
                                 <p className='mt-2'>DCM caters for offices, commercial establishments, institutions who require their properties to be protected through Security arrangement & hygienically maintained on an ongoing...</p>
-                                <Cta navigateTo="about" />
+
+                                <div className='flex md:flex-row flex-col justify-between m-auto'>
+
+                                    <Cta navigateTo="about" />
+                                    <div className='flex items-center space-x-2 text-orange-600 text-2xl group cursor-pointer' onClick={handleCertifications}>
+
+                                        <img src={certificateIcon} alt='' />
+                                        <div className='group-hover:underline underline-offset-4'>View Certifications</div>
+                                    </div>
+                                </div>
 
                             </div>
 
@@ -157,21 +177,21 @@ export default function Home() {
 
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
                     {services.map((service, index) => (
-                <Fade direction="up" triggerOnce>
+                        <Fade direction="up" triggerOnce>
 
-                        <div className='flex flex-col p-4 space-y-4 shadow-lg rounded-lg bg-white'>
-                            <div className=''>
-                                <img src={service.image} alt={service.service} className='h-52 w-full rounded-lg' />
-                            </div>
-                            <div className=''>
-                                <div className='font-semibold text-xl text-orange-600'>{service.service}</div>
-                                <div className='text-justify h-24 overflow-auto'>
-                                    {service.description}
+                            <div className='flex flex-col p-4 space-y-4 shadow-lg rounded-lg bg-white'>
+                                <div className=''>
+                                    <img src={service.image} alt={service.service} className='h-52 w-full rounded-lg' />
+                                </div>
+                                <div className='md:h-36 overflow-scroll'>
+                                    <div className='font-semibold text-xl text-orange-600'>{service.service}</div>
+                                    <div className='text-justify'>
+                                        {service.description.slice(0, 150)}...
 
+                                    </div>
                                 </div>
                                 <Cta navigateTo="our-services" />
                             </div>
-                        </div>
                         </Fade>
                     )
                     )}

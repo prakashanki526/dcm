@@ -2,9 +2,9 @@ import React from 'react';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import TeamCard from '../components/TeamCard';
-import anjuImg from '../assets/images/team/anju.jpg';
+import anjuImg from '../assets/images/team/anju.jpeg';
 import mampiImg from '../assets/images/team/mampi.jpg';
-import moonImg from '../assets/images/team/moon1.jpg';
+import moonImg from '../assets/images/team/moon1.jpeg';
 import kabirImg from '../assets/images/team/kabir.jpg';
 import santanuImg from '../assets/images/team/santanu.jpg';
 import { Fade } from 'react-awesome-reveal';
@@ -21,7 +21,7 @@ export default function OurTeam() {
                     <h2 className='text-xl md:text-2xl text-center mb-4 md:mb-8 italic'>"Alone we can do so little; together we can do so much."</h2>
                 </Fade>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-12">
+                <div className="grid grid-cols-1 md:grid-cols- lg:grid-cols- gap-12 mt-12">
                     {/* Managing Director */}
                     <Fade direction="up" triggerOnce>
                         <TeamCard 
