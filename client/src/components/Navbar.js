@@ -17,16 +17,16 @@ export default function Navbar(props) {
             <div className='px-3 md:px-16 lg:px-40 flex items-center justify-between py-1  bg-orange-500 text-white'>
                 <div>
                     <div className='md:flex space-x-2 hidden items-center'>
-                        <a href='https://facebook.com' target='_blank' rel="noreferrer">
+                        <a href='social' target='' rel="noreferrer">
                             <FacebookIcon height="18px" fill="#ffffff" />
                         </a>
-                        <a href='https://twitter.com' target='_blank' rel="noreferrer">
+                        <a href='social' target='' rel="noreferrer">
                             <TwitterIcon height='18px' fill='#ffffff' />
                         </a>
-                        <a href='https://linkedin.com' target='_blank' rel="noreferrer">
+                        <a href='social' target='' rel="noreferrer">
                             <LinkedinIcon height='18px' fill='#ffffff' />
                         </a>
-                        <a href='https://instagram.com' target='_blank' rel="noreferrer">
+                        <a href='social' target='' rel="noreferrer">
                             <InstaIcon height='18px' fill='#ffffff' />
                         </a>
                     </div>

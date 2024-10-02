@@ -2,7 +2,7 @@ import React from 'react';
 
 const TeamCard = (props) => {
     return (
-        <div className='group bg-white shadow-xl rounded-lg overflow-hidden transition-all duration-500 flex flex-col md:flex-row hover:shadow-2xl m-auto'>
+        <div className={`group bg-white shadow-xl rounded-lg overflow-hidden transition-all duration-500 flex flex-col ${props.count%2===0 ? 'md:flex-row' : 'md:flex-row-reverse'} hover:shadow-2xl m-auto`}>
             <div className='h-80 w-ful'>
                 <img src={props.img} alt={props.name} className='h-full object-cover m-auto' />
             </div>

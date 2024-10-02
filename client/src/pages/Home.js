@@ -30,6 +30,7 @@ import pantryImg from '../assets/images/services/pantry.jpg'
 import repairImg from '../assets/images/services/repair.jpg'
 import cleaningImg from '../assets/images/services/cleaning.jpg'
 import Heading from '../components/Heading';
+import ImageSlider from '../components/ImageSlider'
 import certificateIcon from '../assets/images/cs-logo13.svg'
 import { useNavigate } from 'react-router-dom';
 
@@ -124,7 +125,8 @@ export default function Home() {
                 <Fade direction="up" triggerOnce>
                     <div className='flex flex-col md:flex-row gap-4 md:gap-8'>
                         <div className='w-full md:w-[50%]'>
-                            <img src={intoImg} className='rounded-md h-full' alt='' />
+                            {/* <img src={intoImg} className='rounded-md h-full' alt='' /> */}
+                            <ImageSlider />
                         </div>
                         <div className='w-full md:w-[50%] text-lg text-justify'>
                             <div className='flex justify-between'>

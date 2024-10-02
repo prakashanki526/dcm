@@ -23,25 +23,25 @@ export default function Footer() {
                             <div className='flex space-x-1 md:space-x-3 socail-m'>
 
                                 <Fade direction='up' delay={1} triggerOnce>
-                                    <a href='https://www.facebook.com/' target='_blank' rel="noreferrer" className='flex'>
+                                    <a href='/social' target='' rel="noreferrer" className='flex'>
                                         <div className='h-8 w-9 cursor-pointer'>
                                             <FacebookIcon height="30px" fill="#606060" />
                                         </div>
                                         {/* Like Us */}
                                     </a>
-                                    <a href='https://twitter.com/' target='_blank' className='flex' rel="noreferrer">
+                                    <a href='/social' target='' className='flex' rel="noreferrer">
                                         <div className='h-8 w-9 cursor-pointer'>
                                             <TwitterIcon height="30px" fill="#606060" />
                                         </div>
                                         {/* Follow Us */}
                                     </a>
-                                    <a href='https://www.linkedin.com/' target='_blank' className='flex' rel="noreferrer">
+                                    <a href='/social' target='' className='flex' rel="noreferrer">
                                         <div className='h-8 w-9 cursor-pointer'>
                                             <LinkedinIcon height="30px" fill="#606060" />
                                         </div>
                                         {/* Join Us */}
                                     </a>
-                                    <a href='https://www.instagram.com/' target='_blank' className='flex' rel="noreferrer">
+                                    <a href='/social' target='' className='flex' rel="noreferrer">
                                         <div className='h-8 w-9 cursor-pointer'>
                                             <InstaIcon height="30px" fill="#606060" />
                                         </div>

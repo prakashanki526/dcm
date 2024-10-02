@@ -5,17 +5,17 @@ import Heading from './Heading';
 const testimonials = [
     {
         quote: "DCM Vigilance & Maintenance Services Pvt. Ltd. has provided exceptional service to our company. Their professionalism and attention to detail are unmatched.",
-        name: "John Doe",
-        position: "CEO, Example Corp"
+        name: "Jatin Singhal",
+        position: "Manager, Tech Corp"
     },
     {
         quote: "We have been very impressed with the quality of service provided by DCM. Their team is efficient, reliable, and trustworthy.",
-        name: "Jane Smith",
+        name: "Sunil Sharma",
         position: "Manager, Another Company"
     },
     {
         quote: "DCM's commitment to excellence is evident in every interaction we have had with them. They have exceeded our expectations time and time again.",
-        name: "Michael Brown",
+        name: "Vipul Garg",
         position: "Director, Business Co"
     }
 ];

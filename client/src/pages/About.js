@@ -11,6 +11,8 @@ import servicemanIcon from '../assets/icons/serviceman.png'
 import employeeIcon from '../assets/icons/employees.png'
 import visionImg from '../assets/images/about/OurVision.jpeg'
 import missionImg from '../assets/images/about/OurMission.jpeg'
+import cmImg from '../assets/images/about/cm.jpeg'
+import hsImg from '../assets/images/about/hs.jpeg'
 import Award from '../components/icons/Award'
 
 
@@ -40,19 +42,29 @@ export default function About() {
                                     <Countup icon={employeeIcon} start={0} end={5000} text="Employees" />
                                 </div>
                             </div>
-                            <div className=''>
-                                <h2 className='text-3xl font-bold mb-1'>Company History</h2>
-                                <p className='text-lg text-justify'><span className='font-bold'>DCM Vigilance & Maintenance Services Pvt. Ltd.</span> was established with the mission to provide comprehensive security, housekeeping, and manpower management services to commercial and industrial sectors. From the start, we prioritized quality by training our staff, utilizing ISI-branded equipment, and employing proven chemicals. Over the years, our commitment to excellence and reliability has made us a trusted partner in safeguarding and maintaining diverse properties.</p>
+                            <div className='flex flex-col md:flex-row gap-6'>
+                                <div className=''>
+                                    <img src={hsImg} alt='' className='' />
+                                </div>
+                                <div className=''>
+                                    <h2 className='text-3xl font-bold mb-1'>Company History</h2>
+                                    <p className='text-lg text-justify'><span className='font-bold'>DCM Vigilance & Maintenance Services Pvt. Ltd.</span> was established with the mission to provide comprehensive security, housekeeping, and manpower management services to commercial and industrial sectors. From the start, we prioritized quality by training our staff, utilizing ISI-branded equipment, and employing proven chemicals. Over the years, our commitment to excellence and reliability has made us a trusted partner in safeguarding and maintaining diverse properties.</p>
+                                </div>
                             </div>
 
 
-                            <div className=''>
-                                <h2 className='text-3xl font-bold mb-1'>Company Management</h2>
-                                <p className='text-lg text-justify'>Our organization is expertly managed by seasoned professionals, including retired personnel from the Air Force, Army, and other defense forces. Their extensive experience and leadership ensure the highest standards of service and discipline across all our operations. Their strategic insight and dedication drive our commitment to excellence and reliability.</p>
+                            <div className='flex flex-col md:flex-row-reverse gap-6'>
+                                <div className=''>
+                                    <img src={cmImg} alt='' className='' />
+                                </div>
+                                <div className=''>
+                                    <h2 className='text-3xl font-bold mb-1'>Company Management</h2>
+                                    <p className='text-lg text-justify'>Our organization is expertly managed by seasoned professionals, including retired personnel from the Air Force, Army, and other defense forces. Their extensive experience and leadership ensure the highest standards of service and discipline across all our operations. Their strategic insight and dedication drive our commitment to excellence and reliability.</p>
+                                </div>
                             </div>
 
                             <div className=''>
-                                <h2 className='text-3xl font-bold mb-1'>About us as following</h2>
+                                <h2 className='text-3xl font-bold mb-1'>About us</h2>
                                 <p className='text-lg text-justify'><strong>DCM Vigilance & Maintenance Services Pvt. Ltd.</strong> was established in 2001 as a partnership firm and transitioned to a Private Limited Company on 31st March 2009. We are an ISO 9001:2008 certified company, dedicated to providing top-tier security and facility services. Since our inception, we have grown to employ over 5000+ skilled professionals, expanding our reach and capabilities to meet the diverse needs of our clients.</p>
 
                                 <p className='text-lg text-justify mt-2'><strong>DCM</strong> caters to offices, commercial establishments, and institutions that require their properties to be secured and maintained hygienically, whether on an ongoing or once-off basis. We offer a comprehensive range of tailored solutions, including security, total hygiene, cleaning, firefighting, and maintenance services such as carpentry, plumbing, and more. These services are designed to meet the specific needs of any organization, ensuring that their facilities are safe, clean, and efficiently maintained.</p>
@@ -90,7 +102,7 @@ export default function About() {
                                 <Award height="2rem" />
                                 <div className=''>
 
-                            <h3 className='text-2xl font-bold mb-2'>ISO 9001:2015</h3>
+                                    <h3 className='text-2xl font-bold mb-2'>ISO 9001:2015</h3>
                                 </div>
                             </div>
                             <p className='text-l text-gray-500 font-semibold text-center'>
@@ -104,7 +116,7 @@ export default function About() {
                                 <Award height="2rem" />
                                 <div className=''>
 
-                            <h3 className='text-2xl font-bold mb-2'>ISO 45001:2018</h3>
+                                    <h3 className='text-2xl font-bold mb-2'>ISO 45001:2018</h3>
                                 </div>
                             </div>
                             <p className='text-l text-gray-500 font-semibold text-center'>
@@ -118,7 +130,7 @@ export default function About() {
                                 <Award height="2rem" />
                                 <div className=''>
 
-                            <h3 className='text-2xl font-bold mb-2'>ISO 14001:2015</h3>
+                                    <h3 className='text-2xl font-bold mb-2'>ISO 14001:2015</h3>
                                 </div>
                             </div>
                             <p className='text-l text-gray-500 font-semibold text-center'>
@@ -132,7 +144,7 @@ export default function About() {
                                 <Award height="2rem" />
                                 <div className=''>
 
-                            <h3 className='text-2xl font-bold mb-2'>SA 8000:2014</h3>
+                                    <h3 className='text-2xl font-bold mb-2'>SA 8000:2014</h3>
                                 </div>
                             </div>
                             <p className='text-l text-gray-500 font-semibold text-center'>
@@ -150,7 +162,7 @@ export default function About() {
                             <div className='flex flex-col md:flex-row gap-6 md:gap-12'>
                                 <img src={visionImg} className='h-80 object-cover' alt='' />
                                 <div className='text-justify'>
-                                Our vision is to be the foremost provider of security and facility management services, setting industry standards through our commitment to excellence, reliability, and tailored solutions. We aim to safeguard and maintain properties with the highest levels of professionalism, ensuring safe, hygienic, and efficiently managed environments for our clients. By leveraging the expertise of our dedicated professionals and continuously evolving to meet the changing needs of the industries we serve, we strive to build enduring partnerships based on trust, quality, and innovation.
+                                    Our vision is to be the foremost provider of security and facility management services, setting industry standards through our commitment to excellence, reliability, and tailored solutions. We aim to safeguard and maintain properties with the highest levels of professionalism, ensuring safe, hygienic, and efficiently managed environments for our clients. By leveraging the expertise of our dedicated professionals and continuously evolving to meet the changing needs of the industries we serve, we strive to build enduring partnerships based on trust, quality, and innovation.
                                 </div>
                             </div>
                         </Fade>
@@ -165,7 +177,7 @@ export default function About() {
                             <div className='flex flex-col md:flex-row-reverse gap-6 md:gap-12'>
                                 <img src={missionImg} className='h-80 object-cover' alt='' />
                                 <div className='text-justify'>
-                                Our mission is to continuously achieve our goals by delivering superior security and facility management services across India. We are dedicated to expanding our presence nationwide, reaching new markets, and enhancing our capabilities. Through innovation, rigorous training, and a client-focused approach, we strive to provide reliable and tailored solutions that protect and maintain our clients' properties. Our commitment is to grow steadily while upholding the highest standards of service and fostering lasting relationships built on trust and excellence.
+                                    Our mission is to continuously achieve our goals by delivering superior security and facility management services across India. We are dedicated to expanding our presence nationwide, reaching new markets, and enhancing our capabilities. Through innovation, rigorous training, and a client-focused approach, we strive to provide reliable and tailored solutions that protect and maintain our clients' properties. Our commitment is to grow steadily while upholding the highest standards of service and fostering lasting relationships built on trust and excellence.
                                 </div>
                             </div>
                         </Fade>

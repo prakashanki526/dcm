@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Gallery from "./pages/Gallery";
 import Careers from "./pages/Careers";
 import { useEffect } from "react";
+import ComingSoon from "./pages/ComingSoon";
 
 function App() {
   useEffect(() => {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/gallery" element={<Gallery />}></Route>
         <Route path="/careers" element={<Careers />}></Route>
+        <Route path="/social" element={<ComingSoon />}></Route>
       </Routes>
     </BrowserRouter>
   );
