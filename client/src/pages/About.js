@@ -14,7 +14,10 @@ import missionImg from '../assets/images/about/OurMission.jpeg'
 import cmImg from '../assets/images/about/cm.jpeg'
 import hsImg from '../assets/images/about/hs.jpeg'
 import Award from '../components/icons/Award'
-
+import iso1 from '../assets/images/certificates/iso2015.jpg'
+import iso2 from '../assets/images/certificates/iso14001.jpg'
+import iso3 from '../assets/images/certificates/iso45001.png'
+import sa from '../assets/images/certificates/sa.png'
 
 export default function About() {
     useEffect(() => {
@@ -43,6 +46,7 @@ export default function About() {
                                 </div>
                             </div>
                             <div className='flex flex-col md:flex-row gap-6'>
+
                                 <div className=''>
                                     <img src={hsImg} alt='' className='' />
                                 </div>
@@ -97,13 +101,9 @@ export default function About() {
 
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
                         {/* Card 1 */}
-                        <div className='bg-white shadow-lg rounded-lg p-6 hover:scale-110 transition-all duration-500'>
+                        <div className='bg-white shadow-lg rounded-lg p-6 hover:scale-110 transition-all duration-500 flex flex-col gap-4'>
                             <div className='flex space-x-2'>
-                                <Award height="2rem" />
-                                <div className=''>
-
-                                    <h3 className='text-2xl font-bold mb-2'>ISO 9001:2015</h3>
-                                </div>
+                                <img src={iso1} alt='' />
                             </div>
                             <p className='text-l text-gray-500 font-semibold text-center'>
                                 This certification demonstrates our commitment to quality management systems that meet international standards, ensuring consistent service quality.
@@ -111,13 +111,10 @@ export default function About() {
                         </div>
 
                         {/* Card 2 */}
-                        <div className='bg-white shadow-lg rounded-lg p-6 hover:scale-110 transition-all duration-500'>
+                        <div className='bg-white shadow-lg rounded-lg p-6 hover:scale-110 transition-all duration-500 flex flex-col gap-4'>
                             <div className='flex space-x-2'>
-                                <Award height="2rem" />
-                                <div className=''>
+                                <img src={iso3} alt='' />
 
-                                    <h3 className='text-2xl font-bold mb-2'>ISO 45001:2018</h3>
-                                </div>
                             </div>
                             <p className='text-l text-gray-500 font-semibold text-center'>
                                 Focused on occupational health and safety, this certification ensures that we maintain a safe work environment and reduce workplace risks.
@@ -125,13 +122,9 @@ export default function About() {
                         </div>
 
                         {/* Card 3 */}
-                        <div className='bg-white shadow-lg rounded-lg p-6 hover:scale-110 transition-all duration-500'>
+                        <div className='bg-white shadow-lg rounded-lg p-6 hover:scale-110 transition-all duration-500 flex flex-col gap-4'>
                             <div className='flex space-x-2'>
-                                <Award height="2rem" />
-                                <div className=''>
-
-                                    <h3 className='text-2xl font-bold mb-2'>ISO 14001:2015</h3>
-                                </div>
+                                <img src={iso2} alt='' />
                             </div>
                             <p className='text-l text-gray-500 font-semibold text-center'>
                                 Our environmental management systems certification highlights our efforts to minimize the environmental impact of our operations.
@@ -139,13 +132,10 @@ export default function About() {
                         </div>
 
                         {/* Card 4 */}
-                        <div className='bg-white shadow-lg rounded-lg p-6 hover:scale-110 transition-all duration-500'>
+                        <div className='bg-white shadow-lg rounded-lg p-6 hover:scale-110 transition-all duration-500 flex flex-col gap-4'>
                             <div className='flex space-x-2'>
-                                <Award height="2rem" />
-                                <div className=''>
+                                <img src={sa} alt='' />
 
-                                    <h3 className='text-2xl font-bold mb-2'>SA 8000:2014</h3>
-                                </div>
                             </div>
                             <p className='text-l text-gray-500 font-semibold text-center'>
                                 SA 8000 certification reflects our dedication to ethical and socially responsible business practices, including fair labor standards.
