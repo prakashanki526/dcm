@@ -5,8 +5,8 @@ import TeamCard from '../components/TeamCard';
 import anjuImg from '../assets/images/team/anju.jpeg';
 import mampiImg from '../assets/images/team/mampi.jpg';
 import moonImg from '../assets/images/team/moon1.jpeg';
-import kabirImg from '../assets/images/team/kabir.jpg';
-import santanuImg from '../assets/images/team/santanu.jpg';
+import kabirImg from '../assets/images/team/kabir.jpeg';
+import santanuImg from '../assets/images/team/santanu.jpeg';
 import { Fade } from 'react-awesome-reveal';
 import Heading from '../components/Heading';
 
