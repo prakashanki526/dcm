@@ -11,7 +11,7 @@ const testimonials = [
     {
         quote: "We have been very impressed with the quality of service provided by DCM. Their team is efficient, reliable, and trustworthy.",
         name: "Sunil Sharma",
-        position: "Manager, Another Company"
+        position: "Facility Manager, , Nexus Corporates"
     },
     {
         quote: "DCM's commitment to excellence is evident in every interaction we have had with them. They have exceeded our expectations time and time again.",
