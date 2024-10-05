@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Fade } from 'react-awesome-reveal';
-import getInTouchImg from '../assets/images/get-in-touch.png';
+import getInTouchImg from '../assets/images/get-in-touch2.png';
 import { postQuery } from '../api/discover';
 import toast, { Toaster } from 'react-hot-toast';
 
@@ -69,7 +69,7 @@ export default function GetInTouch() {
                                 <textarea className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 resize-none" name="query" placeholder="Write Your Query" value={queryData.query} onChange={(e) => setQueryData({ ...queryData, [e.target.name]: e.target.value })} required rows={4}></textarea>
                             </div>
                             <div className="w-full px-3">
-                                <button className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" disabled={loading}>
+                                <button className="w-full bg-[#990011FF] hover:opacity-90 text-white font-bold py-3 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" disabled={loading}>
                                     {loading ? "Submitting..." : "Submit"}
                                 </button>
                             </div>

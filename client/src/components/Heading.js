@@ -11,7 +11,7 @@ export default function Heading(props) {
                 <div className='relative group'>
                     <div className='heading tracking-wide leading-[3rem] px-1 py-2 uppercase'>{props.text}</div>
 
-                    <div className='absolute hidden lg:block group-hover:h-full transition-all heading-background  bg-gradient-to-r from-orange-300 to-orange-600 duration-700 -z-[1] bottom-0 h-2 w-full rounded-md'></div>
+                    <div className='absolute hidden lg:block group-hover:h-full transition-all heading-background  bg-gradient-to-r from-[#FCF6F5FF] to-[#990011FF] duration-700 -z-[1] bottom-0 h-2 w-full rounded-md'></div>
                 </div>
             </Fade>
         </div>

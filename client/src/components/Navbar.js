@@ -14,7 +14,7 @@ export default function Navbar(props) {
 
     return (
         <div className='fixed top-0 w-full z-50 bg-white'>
-            <div className='px-3 md:px-16 lg:px-40 flex items-center justify-between py-1  bg-orange-500 text-white'>
+            <div className='px-3 md:px-16 lg:px-40 flex items-center justify-between py-1  bg-[#990011FF] text-white'>
                 <div>
                     <div className='md:flex space-x-2 hidden items-center'>
                         <a href='social' target='' rel="noreferrer">
@@ -47,13 +47,13 @@ export default function Navbar(props) {
                 <div className="container mx-auto flex justify-between items-center text-lg">
                     <div className="text-lg font-bold">SECURITY</div>
                     <div className="hidden lg:flex space-x-7">
-                        <div onClick={() => navigate('/')} className={`hover:text-orange-600 cursor-pointer ${props.page === "home" && 'text-orange-600'}`}>Home</div>
-                        <div onClick={() => navigate('/about')} className={`hover:text-orange-600 cursor-pointer ${props.page === "about" && 'text-orange-600'}`}>About Us</div>
-                        <div onClick={() => navigate('/our-services')} className={`hover:text-orange-600 cursor-pointer ${props.page === "our-services" && 'text-orange-600'}`}>Our Services</div>
-                        <div onClick={() => navigate('/gallery')} className={`hover:text-orange-600 cursor-pointer ${props.page === "gallery" && 'text-orange-600'}`}>Gallery</div>
-                        <div onClick={() => navigate('/contact-us')} className={`hover:text-orange-600 cursor-pointer ${props.page === "contact" && 'text-orange-600'}`}>Contact Us</div>
-                        <div onClick={() => navigate('/our-team')} className={`hover:text-orange-600 cursor-pointer ${props.page === "our-team" && 'text-orange-600'}`}>Our Team</div>
-                        <div onClick={() => navigate('/careers')} className={`hover:text-orange-600 cursor-pointer ${props.page === "careers" && 'text-orange-600'}`}>Careers</div>
+                        <div onClick={() => navigate('/')} className={`hover:text-[#990011FF] cursor-pointer ${props.page === "home" && 'text-[#990011FF]'}`}>Home</div>
+                        <div onClick={() => navigate('/about')} className={`hover:text-[#990011FF] cursor-pointer ${props.page === "about" && 'text-[#990011FF]'}`}>About Us</div>
+                        <div onClick={() => navigate('/our-services')} className={`hover:text-[#990011FF] cursor-pointer ${props.page === "our-services" && 'text-[#990011FF]'}`}>Our Services</div>
+                        <div onClick={() => navigate('/gallery')} className={`hover:text-[#990011FF] cursor-pointer ${props.page === "gallery" && 'text-[#990011FF]'}`}>Gallery</div>
+                        <div onClick={() => navigate('/contact-us')} className={`hover:text-[#990011FF] cursor-pointer ${props.page === "contact" && 'text-[#990011FF]'}`}>Contact Us</div>
+                        <div onClick={() => navigate('/our-team')} className={`hover:text-[#990011FF] cursor-pointer ${props.page === "our-team" && 'text-[#990011FF]'}`}>Our Team</div>
+                        <div onClick={() => navigate('/careers')} className={`hover:text-[#990011FF] cursor-pointer ${props.page === "careers" && 'text-[#990011FF]'}`}>Careers</div>
                     </div>
                     <div className="px-3 lg:hidden">
                         <button
@@ -75,13 +75,13 @@ export default function Navbar(props) {
                 <div
                     className={`lg:hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-screen' : 'max-h-0 overflow-hidden'}`}
                 >
-                    <div onClick={() => navigate('/')} className="block px-4 py-2 hover:text-orange-600">Home</div>
-                    <div onClick={() => navigate('/about')} className="block px-4 py-2 hover:text-orange-600">About Us</div>
-                    <div onClick={() => navigate('/our-services')} className="block px-4 py-2 hover:text-orange-600">Our Services</div>
-                    <div onClick={() => navigate('/gallery')} className="block px-4 py-2 hover:text-orange-600">Gallery</div>
-                    <div onClick={() => navigate('/contact-us')} className="block px-4 py-2 hover:text-orange-600">Contact Us</div>
-                    <div onClick={() => navigate('/our-team')} className="block px-4 py-2 hover:text-orange-600">Our Team</div>
-                    <div onClick={() => navigate('/careers')} className="block px-4 py-2 hover:text-orange-600">Careers</div>
+                    <div onClick={() => navigate('/')} className="block px-4 py-2 hover:text-[#990011FF]">Home</div>
+                    <div onClick={() => navigate('/about')} className="block px-4 py-2 hover:text-[#990011FF]">About Us</div>
+                    <div onClick={() => navigate('/our-services')} className="block px-4 py-2 hover:text-[#990011FF]">Our Services</div>
+                    <div onClick={() => navigate('/gallery')} className="block px-4 py-2 hover:text-[#990011FF]">Gallery</div>
+                    <div onClick={() => navigate('/contact-us')} className="block px-4 py-2 hover:text-[#990011FF]">Contact Us</div>
+                    <div onClick={() => navigate('/our-team')} className="block px-4 py-2 hover:text-[#990011FF]">Our Team</div>
+                    <div onClick={() => navigate('/careers')} className="block px-4 py-2 hover:text-[#990011FF]">Careers</div>
                 </div>
             </nav>
         </div>

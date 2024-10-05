@@ -11,7 +11,7 @@ const TeamCard = (props) => {
                 <div className='p-6'>
                     <h3 className='text-xl font-semibold text-center mb-2'>{props.name}</h3>
 
-                    <h4 className='text-lg text-orange-600 text-center mb-4'>{props.position}</h4>
+                    <h4 className='text-lg text-[#990011FF] text-center mb-4'>{props.position}</h4>
                     <p className='text-gray-600 text-lg leading-relaxed transition-opacity duration-300 text-justify italic'>
                         "{props.description}"
                     </p>

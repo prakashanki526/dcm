@@ -103,11 +103,11 @@ export default function Careers() {
                             {jobList.map((job, index) => (
 
                                 <div key={index} className="p-4 bg-white rounded-lg shadow-md">
-                                    <h3 className="text-xl font-bold text-orange-600 mb-2">{job.role}</h3>
+                                    <h3 className="text-xl font-bold text-[#990011FF] mb-2">{job.role}</h3>
                                     <p className="text-gray-700 mb-4">{job.description}</p>
                                     <button
                                         onClick={() => handleApplyClick(job)}
-                                        className="text-white bg-orange-500 hover:bg-orange-600 px-4 py-2 cursor-pointer inline-block text-sm my-2"
+                                        className="text-white bg-[#990011FF] hover:bg-[#990011FF] px-4 py-2 cursor-pointer inline-block text-sm my-2"
                                     >
                                         Apply
                                     </button>
@@ -119,7 +119,7 @@ export default function Careers() {
                     {showForm && (
                         <div className="mt-8 bg-white p-6 rounded-lg shadow-lg flex md:justify-between gap-10" ref={targetDivRef}>
                             <div className='w-full md:w-[50%]'>
-                                <h3 className="text-2xl font-semibold text-center mb-4">Apply for <span className='font-bold text-orange-600'>{selectedJob.role}</span></h3>
+                                <h3 className="text-2xl font-semibold text-center mb-4">Apply for <span className='font-bold text-[#990011FF]'>{selectedJob.role}</span></h3>
                                 <form className="space-y-4" onSubmit={handleSubmit}>
                                     <div>
                                         <label className="block text-gray-700">Name *</label>
@@ -142,7 +142,7 @@ export default function Careers() {
                                         <input type="file" accept="application/pdf" className="w-full p-2 border-0 focus:outline-none rounded bg-gray-100" onChange={(e)=>setResume(e.target.files[0])}  ref={fileInputRef} />
                                     </div>
                                     <div className="text-center">
-                                        <button type="submit" className="text-white bg-orange-500 hover:bg-orange-600 px-6 py-3 cursor-pointer inline-block text-sm my-2" value={resume} disabled={posting}>
+                                        <button type="submit" className="text-white bg-[#990011FF] hover:bg-[#990011FF] px-6 py-3 cursor-pointer inline-block text-sm my-2" value={resume} disabled={posting}>
                                         {loading ? "Submitting..." : "Submit"}
                                         </button>
                                     </div>

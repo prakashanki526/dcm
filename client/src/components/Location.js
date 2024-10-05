@@ -49,7 +49,7 @@ export default function Location() {
                     <div className='w-full md:w-[50%] aspect-square flex flex-col justify-center items-center box-border md:justify-start md:items-start'>
                         <div className='text-center md:text-left'>
                             <h2 className='font-bold text-3xl mb-2'>HEAD OFFICE</h2>
-                            <div className='font-semibold text-lg text-orange-600 mb-2'>DCM Vigilance & Maintenance Services Pvt.Ltd.</div>
+                            <div className='font-semibold text-lg text-[#990011FF] mb-2'>DCM Vigilance & Maintenance Services Pvt.Ltd.</div>
                             <div className='text-base'>Kaikhali, Chiriamore, P.O. & P.S Airport, Kolkata - 700136</div>
 
                             <div className='mt-4'>
@@ -73,7 +73,7 @@ export default function Location() {
                                 </div>
 
                                 <div className='mt-4 flex items-center justify-center md:justify-start'>
-                                    <a href='https://maps.app.goo.gl/qucSXaQTPwCKnCaq7' target="_blank" rel="noreferrer" className='flex items-center text-orange-600'>
+                                    <a href='https://maps.app.goo.gl/qucSXaQTPwCKnCaq7' target="_blank" rel="noreferrer" className='flex items-center text-[#990011FF]'>
                                         <img src={locationIcon} alt='location' className='mr-2 w-5 h-5' />
                                         Directions
                                     </a>
@@ -103,7 +103,7 @@ export default function Location() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {branches.map((branch, index) => (
                             <div key={index} className="border p-6 shadow-md rounded-lg bg-white hover:shadow-lg transition-shadow duration-300">
-                                <h3 className="font-bold text-xl mb-2 text-orange-600">{branch.branch}</h3>
+                                <h3 className="font-bold text-xl mb-2 text-[#990011FF]">{branch.branch}</h3>
                                 <p className="text-gray-700">{branch.address}</p>
                             </div>
                         ))}

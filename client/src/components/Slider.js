@@ -54,7 +54,7 @@ export default function Slider() {
                 {slides.map((slide, index) => (
                     <div className={`absolute block w-full transition-opacity duration-700 ease-in-out ${index === currentIndex ? 'opacity-100' : 'opacity-0'
                             }`} key={index}>
-                        <div className='absolute top-0 left-0 w-0 h-0 border-t-[500px] md:border-t-[900px] border-t-orange-500 border-r-[200px] border-r-transparent'></div>
+                        <div className='absolute top-0 left-0 w-0 h-0 border-t-[500px] md:border-t-[900px] border-t-[#990011FF] border-r-[200px] border-r-transparent'></div>
                     <div className='flex justify-between items-center'>
                         <div className='p-6 md:px-16 z-10 md:w-[60%] flex justify-center flex-col'>
                             <div className='text-3xl md:text-5xl font-bold'>{slide.title}</div>

@@ -17,8 +17,8 @@ const Carousel = () => {
 
     return (
         <div className='relative bg-white py-0 overflow-hidden'>
-            <div className='absolute top-0 left-0 w-0 h-0 border-t-[700px] border-t-orange-500 border-r-[200px] border-r-transparent'></div>
-            {/* <div className='absolute bottom-0 left-0 w-0 h-0 border-b-[700px] border-b-orange-500 border-r-[200px] border-r-transparent'></div> */}
+            <div className='absolute top-0 left-0 w-0 h-0 border-t-[700px] border-t-[#990011FF] border-r-[200px] border-r-transparent'></div>
+            {/* <div className='absolute bottom-0 left-0 w-0 h-0 border-b-[700px] border-b-[#990011FF] border-r-[200px] border-r-transparent'></div> */}
             <div className='container mx-auto px-4'>
                 <Slider {...settings}>
                     <div className=''>

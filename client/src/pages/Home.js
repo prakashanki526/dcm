@@ -112,7 +112,7 @@ export default function Home() {
                                 Always for your needs
                             </motion.div>
                         </div>
-                        <motion.div animate={{ y: 0 }} transition={{ type: "spring", bounce: 0.2, delay: 2.5 }} initial={{ y: 500 }} className='flex justify-center items-center border border-white hover:border-orange-600 text-white pl-6 py-2 cursor-pointer hover:bg-orange-600 mt-8 w-44 group z-50' onClick={() => ref.current?.scrollIntoView({ behavior: 'smooth' })}>
+                        <motion.div animate={{ y: 0 }} transition={{ type: "spring", bounce: 0.2, delay: 2.5 }} initial={{ y: 500 }} className='flex justify-center items-center border border-white hover:border-[#990011FF] text-white pl-6 py-2 cursor-pointer hover:bg-[#990011FF] mt-8 w-44 group z-50' onClick={() => ref.current?.scrollIntoView({ behavior: 'smooth' })}>
                             <div className='flex justify-center items-center'>Contact Us</div>
                             <div className='flex justify-center items-center ml-2 transition-all duration-400 group-hover:ml-4'>
                                 <ArrowRight width="22px" fill="white" />
@@ -148,7 +148,7 @@ export default function Home() {
                                 <div className='flex md:flex-row flex-col justify-between m-auto'>
 
                                     <Cta navigateTo="about" />
-                                    <div className='flex items-center space-x-2 text-orange-600 text-2xl group cursor-pointer' onClick={handleCertifications}>
+                                    <div className='flex items-center space-x-2 text-[#990011FF] text-2xl group cursor-pointer' onClick={handleCertifications}>
 
                                         <img src={certificateIcon} alt='' />
                                         <div className='group-hover:underline underline-offset-4'>View Certifications</div>
@@ -186,7 +186,7 @@ export default function Home() {
                                     <img src={service.image} alt={service.service} className='h-52 w-full rounded-lg' />
                                 </div>
                                 <div className='md:h-36 overflow-scroll'>
-                                    <div className='font-semibold text-xl text-orange-600'>{service.service}</div>
+                                    <div className='font-semibold text-xl text-[#990011FF]'>{service.service}</div>
                                     <div className='text-justify'>
                                         {service.description.slice(0, 150)}...
 

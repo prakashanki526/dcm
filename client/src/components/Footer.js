@@ -50,21 +50,21 @@ export default function Footer() {
                                 </Fade>
                             </div>
                             <Fade direction='up' delay={1} triggerOnce>
-                            <div className='text-orange-600 text-md font-bold px-4 hidden lg:block'>DCM Vigilance & Maintenance Services Pvt. Ltd.</div>
+                            <div className='text-[#990011FF] text-md font-bold px-4 hidden lg:block'>DCM Vigilance & Maintenance Services Pvt. Ltd.</div>
                             </Fade>
                         </div>
                     </div>
 
                     <div className='flex flex-1 flex-col items-center lg:items-end w-full gap-3'>
                         <Fade direction='up' triggerOnce>
-                            <div className='text-orange-600 text-sm font-bold md:hidden'>DCM Vigilance & Maintenance Services Pvt. Ltd.</div>
+                            <div className='text-[#990011FF] text-sm font-bold md:hidden'>DCM Vigilance & Maintenance Services Pvt. Ltd.</div>
 
                             <div className='text-center md:text-right'>
-                                <span className='text-orange-600 text-sm'>Send Mail: </span><a href="mailto:caredcm@dcmvigilance.com">caredcm@dcmvigilance.com</a>
+                                <span className='text-[#990011FF] text-sm'>Send Mail: </span><a href="mailto:caredcm@dcmvigilance.com">caredcm@dcmvigilance.com</a>
                             </div>
 
                             <div className=''>
-                                <span className='text-orange-600 text-sm'>Call Us: </span><a href='tel:+91-(033) 4603 1489'>+91-033 46031489</a>
+                                <span className='text-[#990011FF] text-sm'>Call Us: </span><a href='tel:+91-(033) 4603 1489'>+91-033 46031489</a>
                             </div>
 
                             <div className='text-sm my-4 text-gray-500 text-center'>
