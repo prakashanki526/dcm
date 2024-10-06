@@ -132,7 +132,7 @@ export default function Home() {
                             <div className='flex justify-between'>
                                 <div className='flex flex-col gap-4'>
                                     <Countup icon={experienceIcon} start={0} end={23} text="Years of Experience" />
-                                    <Countup icon={servicemanIcon} start={0} end={50} text="Ex- Serviceman" />
+                                    <Countup icon={servicemanIcon} start={0} end={100} text="Ex- Serviceman" />
                                 </div>
 
                                 <div className=' flex flex-col gap-4'>

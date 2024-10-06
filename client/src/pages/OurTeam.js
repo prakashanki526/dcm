@@ -24,48 +24,48 @@ export default function OurTeam() {
                 <div className="grid grid-cols-1 md:grid-cols- lg:grid-cols- gap-12 mt-12">
                     {/* Managing Director */}
                     <Fade direction="up" triggerOnce>
-                        <TeamCard 
-                            img={anjuImg} 
-                            name="MRS. ANJUMANARA BEGAM" 
+                        <TeamCard
+                            img={anjuImg}
+                            name="MRS. ANJUMANARA BEGAM"
                             position="MANAGING DIRECTOR"
-                            description="As the Managing Director, I am deeply committed to fostering a culture of excellence and innovation within our organization. My role is to steer our company toward achieving its vision while ensuring that every team member is empowered and inspired. Together, we strive to set new standards and deliver exceptional results."
+                            description="I set the strategic direction for our company, ensuring we consistently deliver cutting-edge security services. My role is to empower our team to exceed client expectations and adapt to changing security needs."
                             count={0}
                         />
                     </Fade>
 
                     {/* Directors */}
                     <Fade direction="up" triggerOnce>
-                        <TeamCard 
-                            img={mampiImg} 
-                            name="MS. MAMPI MONDAL" 
-                            position="DIRECTOR"
-                            description="In my role as Director, I focus on strategic planning and driving growth initiatives. I take pride in collaborating with our talented team to bring innovative solutions to the forefront and meet our clients' needs."
+                        <TeamCard
+                            img={mampiImg}
+                            name="MS. MAMPI MONDAL"
+                            position="DIRECTOR (INNOVATION & DEVELOPMENT)"
+                            description="I focus on driving innovation and developing new ideas to keep our services ahead of the curve. My mission is to ensure we are always prepared for future challenges."
                             count={1}
                         />
-                        <TeamCard 
-                            img={moonImg} 
-                            name="MS. MOONMOON MONDAL" 
+                        <TeamCard
+                            img={moonImg}
+                            name="MS. MOONMOON MONDAL"
                             count={2}
-                            position="DIRECTOR"
-                            description="As a Director, I aim to contribute to shaping the company's future while upholding our core values of integrity and excellence. My goal is to help lead innovation while maintaining a strong sense of purpose."
+                            position="DIRECTOR (FINANCE & ADMINISTRATION)"
+                            description="I oversee all financial operations and administrative processes to ensure efficiency and compliance. My role is to provide a solid foundation that supports both our team and our clients."
                         />
                     </Fade>
 
                     {/* Operational Head & Senior Manager */}
                     <Fade direction="up" triggerOnce>
-                        <TeamCard 
-                            img={kabirImg} 
+                        <TeamCard
+                            img={kabirImg}
                             count={3}
-                            name="MR. KABIR MONDAL" 
+                            name="MR. KABIR MONDAL"
                             position="OPERATIONAL HEAD"
-                            description="As the Operational Head, my focus is on optimizing efficiency and effectiveness across all departments. I work closely with our teams to streamline processes and ensure our services exceed expectations." 
+                            description="I manage on-ground operations and build strong client relationships to provide effective security solutions. My goal is to ensure every client receives responsive and tailored support."
                         />
-                        <TeamCard 
-                            img={santanuImg} 
-                            name="MR. SANTANU CHAUDHARY" 
+                        <TeamCard
+                            img={santanuImg}
+                            name="MR. SANTANU CHAUDHARY"
                             count={4}
                             position="SENIOR MANAGER ADMIN"
-                            description="In my role as Senior Manager Admin, I manage daily operations, supporting staff and ensuring that everything runs smoothly. I am dedicated to fostering an organized and supportive environment for success."
+                            description="I take care of the logistical and administrative support to keep our operations seamless. My focus is on maintaining the backbone of our team, enabling them to perform at their best."
                         />
                     </Fade>
                 </div>
