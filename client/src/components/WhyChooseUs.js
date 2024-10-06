@@ -120,11 +120,11 @@ export default function WhyChooseUs() {
 
             <Slider {...settings}>
                 {data.map((item, index) => (
-                    <div key={index} className="p-4 h-80 md:h-[20rem] mb-4">
-                        <div className="bg-white p-6 rounded-lg shadow-lg h-full flex flex-col justify-between transition-transform transform hover:scale-110 hover:shadow-xl duration-700">
+                    <div key={index} className="p-4 mb-8">
+                        <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between transition-transform transform hover:scale-110 hover:shadow-xl duration-700 h-80 md:h-[18rem] overflow-y-scroll">
                             <div>
                                 <div className='text-2xl font-bold text-[#990011FF] mb-1'>{item.title}</div>
-                                <div className='text-gray-700 text-justify'>{item.description}</div>
+                                <div className='text-gray-700 text-justify '>{item.description}</div>
                             </div>
                         </div>
                     </div>

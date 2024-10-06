@@ -7,6 +7,7 @@ import TwitterIcon from './icons/TwitterIcon';
 import LinkedinIcon from './icons/LinkedinIcon';
 import InstaIcon from './icons/InstaIcon';
 import { useNavigate } from 'react-router-dom';
+import logo from '../assets/logos/dcm.png'
 
 export default function Navbar(props) {
     const [isOpen, setIsOpen] = useState(false);
@@ -43,9 +44,11 @@ export default function Navbar(props) {
                     </div>
                 </div>
             </div>
-            <nav className="px-3 md:px-16 lg:px-40 py-4 shadow-lg">
+            <nav className="px-3 md:px-16 lg:px-40 py-2 shadow-lg">
                 <div className="container mx-auto flex justify-between items-center text-lg">
-                    <div className="text-lg font-bold">SECURITY</div>
+                    <div className="text-lg font-bold">
+                        <img src={logo} alt='' className='h-12' />
+                    </div>
                     <div className="hidden lg:flex space-x-7">
                         <div onClick={() => navigate('/')} className={`hover:text-[#990011FF] cursor-pointer ${props.page === "home" && 'text-[#990011FF]'}`}>Home</div>
                         <div onClick={() => navigate('/about')} className={`hover:text-[#990011FF] cursor-pointer ${props.page === "about" && 'text-[#990011FF]'}`}>About Us</div>
