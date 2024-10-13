@@ -135,7 +135,7 @@ export default function Careers() {
                                     </div>
                                     <div>
                                         <label className="block text-gray-700">Qualification</label>
-                                        <input type="text" className="w-full p-2 border-0 focus:outline-none rounded bg-gray-100" value={contact} onChange={(e)=>setContact(e.target.value)} />
+                                        <input type="text" className="w-full p-2 border-0 focus:outline-none rounded bg-gray-100" value={qualification} onChange={(e)=>setQualification(e.target.value)} />
                                     </div>
                                     <div>
                                         <label className="block text-gray-700">Resume</label>

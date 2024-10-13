@@ -8,6 +8,12 @@ import Gallery from "./pages/Gallery";
 import Careers from "./pages/Careers";
 import { useEffect } from "react";
 import ComingSoon from "./pages/ComingSoon";
+import HomeAdmin from './pages-admin/Home';
+import Login from './pages-admin/Login';
+import Signup from './pages-admin/Signup';
+import ProtectedRoute from './components-admin/ProtectedRoute';
+import CareersAdmin from './pages-admin/Careers';
+import Queries from './pages-admin/Queries';
 
 function App() {
   useEffect(() => {
@@ -24,6 +30,13 @@ function App() {
         <Route path="/gallery" element={<Gallery />}></Route>
         <Route path="/careers" element={<Careers />}></Route>
         <Route path="/social" element={<ComingSoon />}></Route>
+        <Route path="/admin/login" element={<Login />} />
+        <Route path="/admin/signup" element={<Signup />} />
+        <Route element={<ProtectedRoute />}>
+          <Route path="/admin" element={<HomeAdmin />} />
+          <Route path="/admin/careers" element={<CareersAdmin />} />
+          <Route path="/admin/queries" element={<Queries />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
